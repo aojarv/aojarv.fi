@@ -1,0 +1,18 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+
+const App = () => {
+  return(
+    <>
+      <body>
+        
+      </body>
+    </>
+  )
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
