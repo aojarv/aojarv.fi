@@ -4,7 +4,9 @@ import './index.css'
 
 const Mainpage = () => {
   return(
+    <>
 
+    </>
   )
 }
 

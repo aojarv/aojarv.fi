@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-const Projects = () => {
+const Education = () => {
   return(
     <>
 
@@ -10,4 +10,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Education
