@@ -5,7 +5,9 @@ import './index.css'
 const Mainpage = () => {
   return(
     <>
-
+      <div>
+        <h1>666</h1>
+      </div>
     </>
   )
 }

@@ -5,7 +5,9 @@ import './index.css'
 const Education = () => {
   return(
     <>
-
+      <div>
+        <h1>työ</h1>
+      </div>
     </>
   )
 }

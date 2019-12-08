@@ -5,7 +5,9 @@ import './index.css'
 const Projects = () => {
   return(
     <>
-
+      <div>
+        <h1>xd</h1>
+      </div>
     </>
   )
 }
