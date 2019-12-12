@@ -1,23 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Orbitron&display=swap');
+
 body{
-    height: 4000px;
-    background: linear-gradient( green 0%,
-                                 green 25%, 
-                                 blue 25%, 
-                                 blue 50%, 
-                                 red 50%, 
-                                 red 75%, 
-                                 yellow 75%);
-    width: 100%;
-  }
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  font-family: 'Monoton', cursive;
+}
 
   .link{
     padding: 5px;
-    border: 2px solid red;
+    border: 3px solid red;
+    border-radius: 10px;
+    border-spacing: 10px;
     color: red;
     text-decoration: none;
   }
 
+  .xd{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+
   .home{
+    color: red;
     font-size: 40px;
     text-align: center;
+  }
+
+  .whoami{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .projects{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+  }
+  .education{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .right{
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .left{
+    text-align: left;
+    font-size: 20px;
   }

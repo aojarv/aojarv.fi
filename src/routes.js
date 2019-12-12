@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route, Link, Redirect, withRouter
@@ -7,7 +6,7 @@ import {
 import './index.css'
 import Whoami from './whoami.js'
 import Projects from './projects.js'
-import Education from './education.js'
+import Faq from './faq.js'
 import Home from './home.js'
 
 const Routes = () => {
@@ -16,12 +15,10 @@ const Routes = () => {
       <div>
       <Router>
         <div>
-          <div>
-          </div>
           <Route exact path="/" render={() => <Home />} />
           <Route path="/whoami" render={() => <Whoami />} />
-          <Route path="/education" render={() => <Education />} />
           <Route path="/projects" render={() => <Projects />} />
+          <Route path="/faq" render={() => <Faq />} />
         </div>
       </Router>
     </div>
