@@ -1,14 +1,14 @@
 import React from 'react'
 import './index.css'
 
-const Education = () => {
+const Whoami = () => {
   return(
     <>
       <div>
-        <h1>työ</h1>
+        <h1>666</h1>
       </div>
     </>
   )
 }
 
-export default Education
+export default Whoami

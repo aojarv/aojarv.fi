@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Routee from './router.js'
+import Routes from './routes.js'
 
 const App = () => {
   return(
     <>
-      <Routee/>
+      <Routes/>
     </>
   )
 }
