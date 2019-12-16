@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.css'
 import {
   BrowserRouter as Router,
@@ -6,18 +6,37 @@ import {
 } from 'react-router-dom'
 
 const Faq = () => {
+
+  const [luokka, setLuokka] = useState({})
+
+    useEffect (() => {
+        
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb" ]
+        
+        const lol = Math.floor(Math.random() * array.length)
+
+        let object = {
+            a: array[lol]+"1",
+            b: array[lol]+"2",
+            c: array[lol]+"3",
+            d: array[lol]+"4",
+            e: array[lol]+"5"
+        }
+        setLuokka(object)
+    }, [])
+
   return(
     <>
       <div className="left">
-        <p><Link className="link" to="/">Home</Link></p>
-        <p><Link className="link" to="/whoami">whoami</Link></p>
-        <p><Link className="link" to="/projects">projects</Link></p>
+        <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
+        <p className={luokka.b}><Link className="link" to="/whoami">whoami</Link></p>
+        <p className={luokka.c}><Link className="link" to="/projects">projects</Link></p>
       </div>
       <div className="right">
-        <p><Link className="link" to="/contact">Contact</Link></p>
+        <p className={luokka.d}><Link className="link" to="/contact">Contact</Link></p>
       </div>
       <div className="faq">
-        <h1>FAQ</h1>
+        <h1 className={luokka.e}>FAQ</h1>
       </div>
     </>
   )

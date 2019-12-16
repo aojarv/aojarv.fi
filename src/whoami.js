@@ -9,40 +9,21 @@ const Whoami = () => {
 
   const [luokka, setLuokka] = useState({})
 
-  useEffect (() => {
-    const arr = [
-        {
-            a: "a1",
-            b: "a2",
-            c: "a3",
-            d: "a4",
-            e: "a5"
-        },
-        {
-            a: "b1",
-            b: "b2",
-            c: "b3",
-            d: "b4",
-            e: "b5"
-        },
-        {
-            a: "c1",
-            b: "c2",
-            c: "c3",
-            d: "c4",
-            e: "c5"
-        },
-        {
-            a: "d1",
-            b: "d2",
-            c: "d3",
-            d: "d4",
-            e: "d5"
+    useEffect (() => {
+        
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb" ]
+        
+        const lol = Math.floor(Math.random() * array.length)
+
+        let object = {
+            a: array[lol]+"1",
+            b: array[lol]+"2",
+            c: array[lol]+"3",
+            d: array[lol]+"4",
+            e: array[lol]+"5"
         }
-        ]
-    const lol = Math.floor(Math.random() * arr.length)
-    setLuokka(arr[lol])
-}, [])
+        setLuokka(object)
+    }, [])
 
   return(
     <>
