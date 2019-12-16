@@ -1,46 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton|Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 
 body{
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  font-family: 'Monoton', cursive;
+  background: white;
+  font-family: 'Saira Stencil One', cursive;
+  height: 3000px;
+}
+
+.changeColor {
+  background: white;
 }
 
   .link{
     padding: 5px;
-    border: 3px solid red;
+    color: inherit;
     border-radius: 10px;
     border-spacing: 10px;
-    color: red;
     text-decoration: none;
   }
 
   .xd{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
   }
 
   .home{
-    color: red;
+    color: inherit;
     font-size: 40px;
     text-align: center;
   }
 
   .whoami{
-    color: red;
+    color: inherit;
     font-size: 40px;
     text-align: center;
   }
 
   .projects{
-    color: red;
+    color: inherit;
     font-size: 40px;
     text-align: center;
   }
-  .education{
-    color: red;
+  .faq{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact{
+    color: inherit;
     font-size: 40px;
     text-align: center;
   }

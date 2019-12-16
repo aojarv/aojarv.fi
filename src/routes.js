@@ -8,6 +8,7 @@ import Whoami from './whoami.js'
 import Projects from './projects.js'
 import Faq from './faq.js'
 import Home from './home.js'
+import Contact from './contact.js'
 
 const Routes = () => {
   return(
@@ -19,6 +20,7 @@ const Routes = () => {
           <Route path="/whoami" render={() => <Whoami />} />
           <Route path="/projects" render={() => <Projects />} />
           <Route path="/faq" render={() => <Faq />} />
+          <Route path="/contact" render={() => <Contact />} />
         </div>
       </Router>
     </div>

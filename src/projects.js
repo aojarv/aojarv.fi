@@ -9,13 +9,14 @@ const Projects = () => {
   return(
     <>
       <div className="left">
-    <p><Link className="link" to="/">Home</Link></p>
-      <p><Link className="link" to="/whoami">whoami</Link></p>
-    </div>
-    <div className="right">
-      <p><Link className="link" to="/faq">FAQ</Link></p>
+        <p><Link className="link" to="/">Home</Link></p>
+        <p><Link className="link" to="/whoami">whoami</Link></p>
       </div>
-      <div className="education">
+      <div className="right">
+        <p><Link className="link" to="/faq">FAQ</Link></p>
+        <p><Link className="link" to="/contact">contact</Link></p>
+      </div>
+      <div className="projects">
         <h1>Projects</h1>
       </div>
     </>
