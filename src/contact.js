@@ -29,7 +29,7 @@ const Contact = () => {
       return(
         <>
           <div className="howtocontact">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/8mj-dcXhCHI/hqdefault.jpg"></img></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img className="zoom" src="https://i.ytimg.com/vi/8mj-dcXhCHI/hqdefault.jpg"></img></a>
           </div>
         </>
       )
@@ -49,7 +49,6 @@ const Contact = () => {
       </div>
       </div>
       <HowToContact id="1"/>
-      <div className="zoom"></div>
     </>
   )
 }
