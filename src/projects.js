@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route, Link, Redirect, withRouter
 } from 'react-router-dom'
+import { Link as Link1, animateScroll as scroll } from "react-scroll";
 
 const Projects = () => {
 
@@ -25,19 +26,32 @@ const Projects = () => {
         setLuokka(object)
     }, [])
 
+    const Project = () => {
+      return(
+        <>
+          <div className="project">
+
+          </div>
+        </>
+      )
+    }
+
   return(
     <>
-      <div className="left">
-        <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
-        <p className={luokka.b}><Link className="link" to="/whoami">whoami</Link></p>
+      <div className="projekti">
+        <div className="left">
+          <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
+          <p className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></p>
+        </div>
+        <div className="right">
+          <p className={luokka.c}><Link className="link" to="/faq">FAQ</Link></p>
+          <p className={luokka.d}><Link className="link" to="/contact">Contact</Link></p>
+        </div>
+        <div className="projects">
+          <h1 className={luokka.e}>Projects</h1>
+        </div>
       </div>
-      <div className="right">
-        <p className={luokka.c}><Link className="link" to="/faq">FAQ</Link></p>
-        <p className={luokka.d}><Link className="link" to="/contact">contact</Link></p>
-      </div>
-      <div className="projects">
-        <h1 className={luokka.e}>Projects</h1>
-      </div>
+      <Project />
     </>
   )
 }

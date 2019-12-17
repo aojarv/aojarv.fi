@@ -29,7 +29,7 @@ const Contact = () => {
     <>
     <div className="left">
       <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
-      <p className={luokka.b}><Link className="link" to="/whoami">whoami</Link></p>
+      <p className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></p>
       <p className={luokka.c}><Link className="link" to="/projects">projects</Link></p>
       <p className={luokka.d}><Link className="link" to="/faq">FAQ</Link></p>
     </div>

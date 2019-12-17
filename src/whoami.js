@@ -33,7 +33,7 @@ const Whoami = () => {
       <div className="right">
       <div className={luokka.c}><p><Link className="link" to="/projects">Projects</Link></p></div>
       <div className={luokka.d}><p><Link className="link" to="/faq">FAQ</Link></p></div>
-      <div className={luokka.e}><p><Link className="link" to="/contact">contact</Link></p></div>
+      <div className={luokka.e}><p><Link className="link" to="/contact">Contact</Link></p></div>
       </div>
       <div className={luokka.a}>
       <p className="whoami"><h1>Who am i?</h1></p>

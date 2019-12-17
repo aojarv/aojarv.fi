@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './index.css'
+import './home.css'
 import './colors.css'
 import {
     BrowserRouter as Router,
@@ -11,7 +11,7 @@ const Home = () => {
     const [luokka, setLuokka] = useState({})
 
     useEffect (() => {
-        
+
         const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb" ]
         
         const lol = Math.floor(Math.random() * array.length)
@@ -28,15 +28,15 @@ const Home = () => {
 
     return(
         <>
-            <div className="xd">
+            <div className="koti">
                 <div className={luokka.a}>
                     <h1>ANTTI JÄRVELÄINEN</h1>
                 </div>
                 <div>
-                    <div className={luokka.b}><Link className="link" to="/whoami">Who am i</Link></div>
+                    <div className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></div>
                     <div className={luokka.c}><Link className="link" to="/projects">Projects</Link></div>
                     <div className={luokka.d}><Link className="link" to="/faq">FAQ</Link></div>
-                    <div className={luokka.e}><Link className="link" to="/contact">contact</Link></div>
+                    <div className={luokka.e}><Link className="link" to="/contact">Contact</Link></div>
                 </div>
             </div>
         </>
