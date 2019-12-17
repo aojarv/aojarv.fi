@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import './index.css'
 import {
   BrowserRouter as Router,
-  Route, Link, Redirect, withRouter
+  Route, Link as Linkki, Redirect, withRouter
 } from 'react-router-dom'
-import { Link as Link1, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Projects = () => {
 
@@ -26,10 +26,10 @@ const Projects = () => {
         setLuokka(object)
     }, [])
 
-    const Project = () => {
+    const Project = (props) => {
       return(
         <>
-          <div className="project">
+          <div className="project" id={props.id}>
 
           </div>
         </>
@@ -40,18 +40,30 @@ const Projects = () => {
     <>
       <div className="projekti">
         <div className="left">
-          <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
-          <p className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></p>
+          <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
+          <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
         </div>
         <div className="right">
-          <p className={luokka.c}><Link className="link" to="/faq">FAQ</Link></p>
-          <p className={luokka.d}><Link className="link" to="/contact">Contact</Link></p>
+          <p className={luokka.c}><Linkki className="link" to="/faq">FAQ</Linkki></p>
+          <p className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></p>
         </div>
         <div className="projects">
           <h1 className={luokka.e}>Projects</h1>
         </div>
+        <Link 
+        className="linkki"
+        activeClass="active"
+        to="p1"
+        spy={false}
+        smooth={true}
+        offset={0}
+        duration={500}
+        >
+          <img src="https://img.youtube.com/vi/NNIpdyN2pQo/mqdefault_live.jpg"></img>
+        </Link>
       </div>
-      <Project />
+      <Project id="p1"/>
+      
     </>
   )
 }

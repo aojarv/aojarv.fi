@@ -25,8 +25,19 @@ const Contact = () => {
         setLuokka(object)
     }, [])
 
+    const HowToContact = (props) => {
+      return(
+        <>
+          <div className="howtocontact">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/8mj-dcXhCHI/hqdefault.jpg"></img></a>
+          </div>
+        </>
+      )
+    }
+
   return(
     <>
+    <div className="con">
     <div className="left">
       <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
       <p className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></p>
@@ -36,6 +47,9 @@ const Contact = () => {
       <div className="contact">
         <h1 className={luokka.e}>Contact</h1>
       </div>
+      </div>
+      <HowToContact id="1"/>
+      <div className="zoom"></div>
     </>
   )
 }

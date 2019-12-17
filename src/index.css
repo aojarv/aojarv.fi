@@ -9,9 +9,13 @@ body{
   .link{
     padding: 5px;
     color: inherit;
-    border-radius: 10px;
-    border-spacing: 10px;
     text-decoration: none;
+    transition: transform .2s;
+    
+  }
+
+  .link:hover {
+    transform: scale(1.2);
   }
 
   .whoami{
@@ -37,6 +41,15 @@ body{
     text-align: center;
   }
 
+  .con{
+    height: 100vh;
+  }
+
+  .howtocontact{
+    height: 100vh;
+    text-align: center;
+  }
+
   .right{
     text-align: right;
     font-size: 20px;
@@ -54,4 +67,34 @@ body{
 
   .projekti{
     height: 100vh;
+  }
+
+  .linkki{
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  .linkki:hover{
+    transform: scale(1.2);
+  }
+
+  .a{
+    transition: transform .2s;
+  }
+
+  .a:hover{
+    transform: scale(1.2);
+  }
+
+  .zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5); 
   }
