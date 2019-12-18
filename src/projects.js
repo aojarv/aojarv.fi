@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './index.css'
-import {
-  BrowserRouter as Router,
-  Route, Link as Linkki, Redirect, withRouter
-} from 'react-router-dom'
+import './css/index.css'
+import { Link as Linkki } from 'react-router-dom'
 import { Link } from "react-scroll";
+import ExpandMore from './ExpandMoreIcon';
 
 const Projects = () => {
 
@@ -26,6 +24,8 @@ const Projects = () => {
         setLuokka(object)
     }, [])
 
+
+
     const Project = (props) => {
       return(
         <>
@@ -36,6 +36,8 @@ const Projects = () => {
       )
     }
 
+
+
   return(
     <>
       <div className="projekti">
@@ -44,26 +46,15 @@ const Projects = () => {
           <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
         </div>
         <div className="right">
-          <p className={luokka.c}><Linkki className="link" to="/faq">FAQ</Linkki></p>
+          <p className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></p>
           <p className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></p>
         </div>
         <div className="projects">
           <h1 className={luokka.e}>Projects</h1>
+          <ExpandMore id="p1"/>
         </div>
-        <Link 
-        className="linkki"
-        activeClass="active"
-        to="p1"
-        spy={false}
-        smooth={true}
-        offset={0}
-        duration={500}
-        >
-          <img src="https://img.youtube.com/vi/NNIpdyN2pQo/mqdefault_live.jpg"></img>
-        </Link>
       </div>
       <Project id="p1"/>
-      
     </>
   )
 }

@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import './home.css'
-import './colors.css'
-import {
-    BrowserRouter as Router,
-    Route, Link, Redirect, withRouter
-  } from 'react-router-dom'
-  
+import './css/home.css'
+import './css/colors.css'
+import { Link } from 'react-router-dom'  
 
 const Home = () => {
 
@@ -29,14 +25,14 @@ const Home = () => {
 
     return(
         <>
-            <div className="koti">
+            <div className="home">
                 <div className={luokka.a}>
                     <h1>ANTTI JÄRVELÄINEN</h1>
                 </div>
                 <div>
                     <div className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></div>
                     <div className={luokka.c}><Link className="link" to="/projects">Projects</Link></div>
-                    <div className={luokka.d}><Link className="link" to="/faq">FAQ</Link></div>
+                    <div className={luokka.d}><Link className="link" to="/faq">Faq</Link></div>
                     <div className={luokka.e}><Link className="link" to="/contact">Contact</Link></div>
                 </div>
             </div>

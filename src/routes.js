@@ -1,13 +1,12 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Route, Link, Redirect, withRouter
+  Route
 } from 'react-router-dom'
-import './index.css'
+import Home from './home.js'
 import Whoami from './whoami.js'
 import Projects from './projects.js'
 import Faq from './faq.js'
-import Home from './home.js'
 import Contact from './contact.js'
 
 const Routes = () => {
@@ -29,13 +28,3 @@ const Routes = () => {
 }
 
 export default Routes
-
-
-/**
- * 
- *  <Link className="link" to="/">Home</Link>
-    <Link className="link" to="/whoami">Who am i</Link>
-    <Link className="link" to="/education">Education</Link>
-    <Link className="link" to="/projects">Projects</Link>
- * 
- */

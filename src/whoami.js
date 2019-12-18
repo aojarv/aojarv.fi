@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import './index.css'
-import {
-  BrowserRouter as Router,
-  Route, Link, Redirect, withRouter
-} from 'react-router-dom'
+import './css/index.css'
+import './css/whoami.css'
+import { Link as Linkki } from 'react-router-dom'
+import { Link, animateScroll as scroll } from 'react-scroll'
+import ExpandMore from './ExpandMoreIcon';
+import Totop from './icons/totop.png'
+import ExpandLess from './ExpandLessIcon'
 
 const Whoami = () => {
 
@@ -25,19 +27,43 @@ const Whoami = () => {
         setLuokka(object)
     }, [])
 
+
+
+    const Antti = (props) => {
+      return(
+        <>
+          <div className="container" id={props.id}>
+            <div>
+              <h1>työttömyys</h1>
+            </div>
+            <a onClick={scrollToTop}><img className="totop" src={Totop}></img></a>
+            <ExpandLess id="top"/>
+          </div>
+        </>
+      )
+    }
+
+    const scrollToTop = () => {
+      scroll.scrollToTop();
+  }
+
   return(
     <>
-    <div className="left">
-    <div className={luokka.b}><p><Link className="link" to="/">Home</Link></p></div>
-    </div>
-      <div className="right">
-      <div className={luokka.c}><p><Link className="link" to="/projects">Projects</Link></p></div>
-      <div className={luokka.d}><p><Link className="link" to="/faq">FAQ</Link></p></div>
-      <div className={luokka.e}><p><Link className="link" to="/contact">Contact</Link></p></div>
+      <div className="whoisantti" id="top">
+        <div className="left">
+          <p className={luokka.b}><Linkki className="link" to="/">Home</Linkki></p>
+        </div>
+        <div className="right">
+          <p className={luokka.c}><Linkki className="link" to="/projects">Projects</Linkki></p>
+          <p className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></p>
+          <p className={luokka.e}><Linkki className="link" to="/contact">Contact</Linkki></p>
+        </div>
+        <div className="whoami">
+          <p className={luokka.a}><h1>Who am i?</h1></p>
+          <ExpandMore id="who1"/>
+        </div>
       </div>
-      <div className={luokka.a}>
-      <p className="whoami"><h1>Who am i?</h1></p>
-      </div>
+      <Antti id="who1"/>
     </>
   )
 }

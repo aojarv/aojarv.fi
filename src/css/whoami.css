@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.whoisantti{
+    height: 98vh;
+}
+
+.link{
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform .2s;
+  }
+
+  .link:hover {
+    transform: scale(1.2);
+  }
+
+  .whoami{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .right{
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .left{
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .totop{
+      height: 40px;
+      width: 40px;
+  }
+
+  .totop:hover{
+      transform: scale(1.3);
+      cursor: pointer;
+  }

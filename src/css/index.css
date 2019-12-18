@@ -3,7 +3,7 @@
 body{
   background: white;
   font-family: 'Saira Stencil One', cursive;
-  
+  height: 300vh;
 }
 
   .link{
@@ -95,4 +95,12 @@ body{
 
   .zoom:hover {
     transform: scale(1.2); 
+  }
+
+  .expandmoreicon{
+    
+  }
+
+  .expandmoreicon:hover{
+    transform: scale(1.3);
   }

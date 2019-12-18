@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './index.css'
-import {
-  BrowserRouter as Router,
-  Route, Link, Redirect, withRouter
-} from 'react-router-dom'
+import './css/index.css'
+import { Link as Linkki } from 'react-router-dom'
+import { Link } from 'react-scroll'
+import Github from './icons/GitHub-Mark-120px-plus.png'
+import Linkedin from './icons/LI-In-Bug.png'
+import ExpandMore from './ExpandMoreIcon.js';
 
 const Contact = () => {
 
@@ -25,11 +26,15 @@ const Contact = () => {
         setLuokka(object)
     }, [])
 
+
+
+
     const HowToContact = (props) => {
       return(
         <>
-          <div className="howtocontact">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img className="zoom" src="https://i.ytimg.com/vi/8mj-dcXhCHI/hqdefault.jpg"></img></a>
+          <div className="howtocontact" id={props.id}>
+            <a href="https://github.com/aojarv" target="_blank" rel="noopener noreferrer"><img className="zoom" src={Github}></img></a>
+            <a href="https://www.linkedin.com/in/antti-j%C3%A4rvel%C3%A4inen-48339919a/" target="_blank" rel="noopener noreferrer"><img className="zoom" src={Linkedin}></img></a>
           </div>
         </>
       )
@@ -37,18 +42,19 @@ const Contact = () => {
 
   return(
     <>
-    <div className="con">
-    <div className="left">
-      <p className={luokka.a}><Link className="link" to="/">Home</Link></p>
-      <p className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></p>
-      <p className={luokka.c}><Link className="link" to="/projects">projects</Link></p>
-      <p className={luokka.d}><Link className="link" to="/faq">FAQ</Link></p>
-    </div>
-      <div className="contact">
-        <h1 className={luokka.e}>Contact</h1>
+      <div className="con">
+        <div className="left">
+          <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
+          <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
+          <p className={luokka.c}><Linkki className="link" to="/projects">projects</Linkki></p>
+          <p className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></p>
+        </div>
+        <div className="contact">
+          <h1 className={luokka.e}>Contact</h1>
+          <ExpandMore id="c1"/>
+        </div>
       </div>
-      </div>
-      <HowToContact id="1"/>
+      <HowToContact id="c1"/>
     </>
   )
 }

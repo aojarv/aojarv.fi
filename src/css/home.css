@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+body{
+  background: white;
+  font-family: 'Saira Stencil One', cursive;
+  height: 100%;
+}
+
+.link{
+    padding: 5px;
+    color: inherit;
+    border-radius: 10px;
+    border-spacing: 10px;
+    text-decoration: none;
+    font-size: 40px;
+  }
+
+  .link:hover{
+    text-transform: uppercase;
+  }
+
+  .home{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+  }
