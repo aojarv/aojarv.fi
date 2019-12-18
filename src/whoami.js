@@ -43,26 +43,32 @@ const Whoami = () => {
       )
     }
 
+    const Top = (props) => {
+      return(
+        <div className="whoisantti" id={props.id}>
+          <div className="left">
+            <p className={luokka.b}><Linkki className="link" to="/">Home</Linkki></p>
+          </div>
+          <div className="whoami">
+            <p className={luokka.a}><h1>Who am i?</h1></p>
+            <ExpandMore id="who1"/>
+          </div>
+          <div className="right">
+            <p className={luokka.c}><Linkki className="link" to="/projects">Projects</Linkki></p>
+            <p className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></p>
+            <p className={luokka.e}><Linkki className="link" to="/contact">Contact</Linkki></p>
+          </div>
+        </div>
+      )
+    }
+
     const scrollToTop = () => {
       scroll.scrollToTop();
-  }
+    }
 
   return(
     <>
-      <div className="whoisantti" id="top">
-        <div className="left">
-          <p className={luokka.b}><Linkki className="link" to="/">Home</Linkki></p>
-        </div>
-        <div className="right">
-          <p className={luokka.c}><Linkki className="link" to="/projects">Projects</Linkki></p>
-          <p className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></p>
-          <p className={luokka.e}><Linkki className="link" to="/contact">Contact</Linkki></p>
-        </div>
-        <div className="whoami">
-          <p className={luokka.a}><h1>Who am i?</h1></p>
-          <ExpandMore id="who1"/>
-        </div>
-      </div>
+      <Top id="top"/>
       <Antti id="who1"/>
     </>
   )

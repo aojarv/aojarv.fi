@@ -11,7 +11,7 @@ const ExpandLess = (props) => {
         to={props.id}
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-70}
         duration={500}
         >
           <ExpandLessIcon fontSize="large" className="expandicon"/>

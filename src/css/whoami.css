@@ -8,11 +8,13 @@
 }
 
 .whoisantti{
-    height: 98vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .link{
-    padding: 5px;
+  padding: 1vh;
     color: inherit;
     text-decoration: none;
     transition: transform .2s;
@@ -24,23 +26,27 @@
 
   .whoami{
     color: inherit;
-    font-size: 40px;
+    font-size: 7vh;
     text-align: center;
+    flex-grow: 2;
   }
 
   .right{
+    flex-grow: 1;
     text-align: right;
-    font-size: 20px;
+    font-size: 4vh;
   }
 
   .left{
+    flex-grow: 1;
     text-align: left;
-    font-size: 20px;
+    font-size: 4vh;
   }
 
   .totop{
       height: 40px;
       width: 40px;
+      transition: transform .1s;
   }
 
   .totop:hover{
