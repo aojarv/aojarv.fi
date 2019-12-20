@@ -1,4 +1,4 @@
-.container{
+.bottom{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,10 +7,11 @@
     border: 2px solid red;
 }
 
-.whoisantti{
+.top{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    font-size: inherit;
 }
 
 .link{
@@ -28,17 +29,17 @@
     color: inherit;
     font-size: 7vh;
     text-align: center;
-    flex-grow: 2;
+    flex: 3;
   }
 
   .right{
-    flex-grow: 1;
+    flex: 1;
     text-align: right;
     font-size: 4vh;
   }
 
   .left{
-    flex-grow: 1;
+    flex: 1;
     text-align: left;
     font-size: 4vh;
   }

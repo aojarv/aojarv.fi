@@ -1,0 +1,11 @@
+body{
+    height: 4000px;
+    background: linear-gradient( green 0%,
+                                 green 25%, 
+                                 blue 25%, 
+                                 blue 50%, 
+                                 red 50%, 
+                                 red 75%, 
+                                 yellow 75%);
+    width: 100%;
+  }

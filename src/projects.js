@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './css/index.css'
+import './css/projects.css'
 import { Link as Linkki } from 'react-router-dom'
-import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import ExpandMore from './ExpandMoreIcon';
+import { grey } from '@material-ui/core/colors';
 
 const Projects = () => {
 
@@ -29,8 +30,8 @@ const Projects = () => {
     const Project = (props) => {
       return(
         <>
-          <div className="project" id={props.id}>
-
+          <div className={props.class} id={props.id}>
+            <div className={props.a}>{props.text}</div>
           </div>
         </>
       )
@@ -40,21 +41,22 @@ const Projects = () => {
 
   return(
     <>
-      <div className="projekti">
+      <div className="top">
         <div className="left">
           <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
           <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
-        </div>
-        <div className="right">
-          <p className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></p>
-          <p className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></p>
         </div>
         <div className="projects">
           <h1 className={luokka.e}>Projects</h1>
           <ExpandMore id="p1"/>
         </div>
+        <div className="right">
+          <p className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></p>
+          <p className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></p>
+        </div>
       </div>
-      <Project id="p1"/>
+      <Project id="p1" class="projectleft" text="töihin" a={luokka.b}/>
+      <Project id="p2" class="projectright" text="työttömyys" a={luokka.a}/>
     </>
   )
 }

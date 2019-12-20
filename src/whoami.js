@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './css/index.css'
 import './css/whoami.css'
 import { Link as Linkki } from 'react-router-dom'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 import ExpandMore from './ExpandMoreIcon';
 import Totop from './icons/totop.png'
 import ExpandLess from './ExpandLessIcon'
@@ -32,11 +32,11 @@ const Whoami = () => {
     const Antti = (props) => {
       return(
         <>
-          <div className="container" id={props.id}>
+          <div className="bottom" id={props.id}>
             <div>
               <h1>työttömyys</h1>
             </div>
-            <a onClick={scrollToTop}><img className="totop" src={Totop}></img></a>
+            <a href onClick={scrollToTop}><img className="totop" src={Totop}></img></a>
             <ExpandLess id="top"/>
           </div>
         </>
@@ -45,7 +45,7 @@ const Whoami = () => {
 
     const Top = (props) => {
       return(
-        <div className="whoisantti" id={props.id}>
+        <div className="top" id={props.id}>
           <div className="left">
             <p className={luokka.b}><Linkki className="link" to="/">Home</Linkki></p>
           </div>

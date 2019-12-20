@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './css/index.css'
+import './css/contact.css'
 import { Link as Linkki } from 'react-router-dom'
-import { Link } from 'react-scroll'
 import Github from './icons/GitHub-Mark-120px-plus.png'
 import Linkedin from './icons/LI-In-Bug.png'
 import ExpandMore from './ExpandMoreIcon.js';
@@ -42,7 +41,7 @@ const Contact = () => {
 
   return(
     <>
-      <div className="con">
+      <div className="top">
         <div className="left">
           <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
           <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
@@ -52,6 +51,9 @@ const Contact = () => {
         <div className="contact">
           <h1 className={luokka.e}>Contact</h1>
           <ExpandMore id="c1"/>
+        </div>
+        <div className="right">
+
         </div>
       </div>
       <HowToContact id="c1"/>
