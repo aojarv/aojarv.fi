@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import './css/index.css'
 import './css/whoami.css'
 import { Link as Linkki } from 'react-router-dom'
-import { animateScroll as scroll } from 'react-scroll'
-import ExpandMore from './ExpandMoreIcon';
-import Totop from './icons/totop.png'
+import ExpandMore from './ExpandMoreIcon'
 import ExpandLess from './ExpandLessIcon'
+import antti from './pictures/antti.png'
 
 const Whoami = () => {
 
   const [luokka, setLuokka] = useState({})
 
+  const text = "I am Antti Järveläinen, a 20-year-old university student from Turku, Finland. I'm studying computer science for 2nd year now and I'm looking to graduate in 2024"
+
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb" ]
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee", "ff" ]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -33,11 +33,15 @@ const Whoami = () => {
       return(
         <>
           <div className="bottom" id={props.id}>
-            <div>
-              <h1>työttömyys</h1>
+            <div className="antti">
+              <div className={props.a}>{text}</div>
             </div>
-            <a href onClick={scrollToTop}><img className="totop" src={Totop}></img></a>
-            <ExpandLess id="top"/>
+            <div className="anttipic">
+              <img className="anttipicc" src={antti} alt="antti"></img>
+            </div>
+            <div className="center">
+              <ExpandLess id="top"/>
+            </div>
           </div>
         </>
       )
@@ -51,7 +55,7 @@ const Whoami = () => {
           </div>
           <div className="whoami">
             <p className={luokka.a}><h1>Who am i?</h1></p>
-            <ExpandMore id="who1"/>
+            <ExpandMore id="who"/>
           </div>
           <div className="right">
             <p className={luokka.c}><Linkki className="link" to="/projects">Projects</Linkki></p>
@@ -62,14 +66,10 @@ const Whoami = () => {
       )
     }
 
-    const scrollToTop = () => {
-      scroll.scrollToTop();
-    }
-
   return(
     <>
       <Top id="top"/>
-      <Antti id="who1"/>
+      <Antti id="who" a={luokka.a}/>
     </>
   )
 }
