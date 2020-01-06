@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e6a2cc9.chunk.css",
+    "main.js": "/static/js/main.f8615e5a.chunk.js",
+    "main.js.map": "/static/js/main.f8615e5a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d076879.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d076879.js.map",
+    "static/js/2.a2ec385a.chunk.js": "/static/js/2.a2ec385a.chunk.js",
+    "static/js/2.a2ec385a.chunk.js.map": "/static/js/2.a2ec385a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e1adc1178ac8f3ae00f3e56ede2ba4d3.js": "/precache-manifest.e1adc1178ac8f3ae00f3e56ede2ba4d3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5e6a2cc9.chunk.css.map": "/static/css/main.5e6a2cc9.chunk.css.map",
+    "static/js/2.a2ec385a.chunk.js.LICENSE": "/static/js/2.a2ec385a.chunk.js.LICENSE",
+    "static/media/antti.png": "/static/media/antti.c4d3b58e.png",
+    "static/media/currencyconverter.png": "/static/media/currencyconverter.75d6ee26.png",
+    "static/media/github.png": "/static/media/github.34620375.png",
+    "static/media/newsfeedapp.png": "/static/media/newsfeedapp.63ca9fc4.png",
+    "static/media/portfolio.png": "/static/media/portfolio.3925b295.png",
+    "static/media/weatherapp.png": "/static/media/weatherapp.928f1f6e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d076879.js",
+    "static/js/2.a2ec385a.chunk.js",
+    "static/css/main.5e6a2cc9.chunk.css",
+    "static/js/main.f8615e5a.chunk.js"
+  ]
+}

@@ -1,87 +1,118 @@
-.container{
-  height: 100vh;
-}
+/** Settings for divs in top
+*
+*
+*/
+  .top{
+    height: 100vh;
+    width: 100%;
+    font-size: inherit;
+  }
 
-.top{
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  font-size: inherit;
-}
+  .right{
+    width: 25%;
+    text-align: right;
+    font-size: 4vh;
+  }
 
-.projects{
-  color: inherit;
-  font-size: 7vh;
-  text-align: center;
-  flex: 3;
-}
+  .left{
+    width: 25%;
+    text-align: left;
+    font-size: 4vh;
+  }
 
-.questionmark{
-  font-size: 60vh;
-  flex: 1;
-  text-align: center;
-  justify-content: center;
-}
+  .projects{
+    color: inherit;
+    font-size: 7vh;
+    text-align: center;
+    width: 50%;
+  }
 
-.projectleft{
-  height: 100vh;
-  text-align: left;
-  border-top: solid 2px black;
-}
 
-.projectright{
-  height: 100vh;
-  text-align: right;
-  border-top: solid 2px black;
-}
 
-.link{
-  padding: 1vh;
+/** Settings for links in top
+*
+*
+*/
+  .link{
+    padding: 1vh;
     color: inherit;
     text-decoration: none;
     transition: transform .2s;
   }
 
   .link:hover {
-    transform: scale(1.2);
+    text-transform: uppercase;
   }
 
-  .right{
-    flex: 1;
-    text-align: right;
-    font-size: 4vh;
+
+
+  /** Settings for expand buttons
+  *
+  *
+  */
+  .center{
+    text-align: center;
+    width: 100%;
   }
 
-  .left{
-    flex: 1;
-    text-align: left;
-    font-size: 4vh;
-  }
 
-  .totop{
-    height: 40px;
-    width: 40px;
-    transition: transform .1s;
+
+/** Settings for scroll.totop component
+*
+*
+*/
+.totop{
+  height: 40px;
+  width: 40px;
+  transition: transform .1s;
 }
 
 .totop:hover{
-    transform: scale(1.3);
-    cursor: pointer;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
-.projectpicture{
-  width: 50%;
-  border: solid 2px black;
-}
 
+
+/** Settings for project-components
+* 
+*
+*/
 .projectheader{
   font-size: 10vh;
+  margin-top: 4vh;
 }
 
 .projectcontent{
   font-size: 5vh;
+  margin-top: 2vh;
 }
 
+.projectleft{
+  height: 100vh;
+  text-align: left;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  
+}
+
+.projectright{
+  height: 100vh;
+  text-align: right;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.projectpicture{
+
+}
+
+
+
+/** Settings for project ideas -component
+*
+*
+*/
 .projectideas{
   height: 100vh;
   
@@ -92,13 +123,13 @@
 .projectideasheader{
   font-size: 10vh;
   flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .projectideascontent{
   font-size: 5vh;
   flex: 8;
-  text-align: left;
+  text-align: center;
 }
 
 .projectideasfooter{
@@ -106,7 +137,147 @@
   flex: 1;
 }
 
-.center{
-  text-align: center;
-  width: 100%;
+
+
+/** Settings when screen width is less than 900px
+*
+*
+*/
+@media screen and (max-width: 900px) {
+  
+  /** Settings for links in top
+  *
+  *
+  */
+  .link{
+    padding: 1vh;
+    color: inherit;
+    text-decoration: none;
+    transition: transform .2s;
+    font-size: 25px;
+  }
+
+  .link:hover {
+    text-transform: uppercase;
+  }
+  
+  
+  /** Settings for divs in top
+  *
+  *
+  */
+  .top{
+    height: 100vh;
+    width: 100%;
+    font-size: inherit;
+  }
+
+  .projects{
+    color: inherit;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .right{
+    width: 25%;
+    text-align: right;
+  }
+
+  .left{
+    width: 25%;
+    text-align: left;
+  }
+
+
+  
+  /** CSS for expand icons
+  *
+  *
+  */
+  .center{
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+  /** Settings for scroll.totop -icon
+  *
+  *
+  */
+  .totop{
+    height: 40px;
+    width: 40px;
+    transition: transform .1s;
+  }
+
+  .totop:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+
+
+
+  /** Settings for project-components
+  *
+  *
+  */
+  .projectheader{
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .projectcontent{
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .projectleft{
+    height: 100vh;
+    text-align: left;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    
+  }
+
+  .projectright{
+    height: 100vh;
+    text-align: right;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+
+  .projectpicture{
+    
+  }
+
+
+
+  /** Settings for bottom component that renders project ideas
+  *
+  *
+  */
+  .projectideas{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectideasheader{
+    font-size: 40px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .projectideascontent{
+    font-size: 20px;
+    flex: 8;
+    text-align: center;
+  }
+
+  .projectideasfooter{
+    text-align: center;
+    flex: 1;
+  }  
 }

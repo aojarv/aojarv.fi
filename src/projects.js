@@ -14,11 +14,11 @@ const Projects = () => {
 
   const [luokka, setLuokka] = useState({})
 
-  const newsfeedapptext = "A news feed app that I created by using React and NodeJS. Currently runs in AWS. Fetches data from The New York Times' API and displays 20 newest articles, articles from 26 different sections and most shared and viewed articles of The NY Times."
+  const newsfeedapptext = "A newsfeed app that I created by using React and NodeJS. Currently runs in AWS. Fetches data from The New York Times' API and displays 20 newest articles, articles from 26 different sections and most shared and viewed articles of The NY Times."
 
-  const portfoliotext = "I created this portfolio site to introduce me and my projects. Created by using React. Runs on Google Firebase. I focused on design and to create well structured code."
+  const portfoliotext = "aojarv.fi, this site. I created this one to introduce me and my projects. Created by using React. Runs on Google Firebase. Focus was on design and creating well structured code. Still a lot to be improved. Will try to keep this site up to date."
 
-  const CCandWAtext = "Weatherapp and currency converter that I created just to learn to use APIs. Scrappy design and poor structure in codes. No backend. "
+  const CCandWAtext = "For example a weatherapp and a currency converter. Simple projects that I created by using React just to learn to use APIs. Scrappy design and poor structure in codes. No backend. Will make them better at some point."
 
     useEffect (() => {
         
@@ -48,16 +48,16 @@ const Projects = () => {
       return(
         <div className="top">
           <div className="left">
-            <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
-            <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
+            <div className={luokka.a}><Linkki className="link" to="/">Home</Linkki></div>
+            <div className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></div>
           </div>
           <div className="projects">
             <h1 className={luokka.e}>Projects</h1>
             <ExpandMore id="p1"/>
           </div>
           <div className="right">
-            <p className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></p>
-            <p className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></p>
+            <div className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></div>
+            <div className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></div>
           </div>
         </div>
       )
@@ -68,13 +68,15 @@ const Projects = () => {
   const Project = (props) => {
     return(
       <>
-          <div className={props.class} id={props.id}>
-            <div className={props.a}><div className="projectheader">{props.title}</div></div>
-            <div className={props.b}><div className="projectcontent">{props.text}</div></div>
-            <div className="center"><ExpandMore id={props.down}/><ExpandLess id={props.up}/>
+        <div className={props.class} id={props.id}>
+          <div className={props.a}><div className="projectheader">{props.title}</div></div>
+          <div className={props.b}><div className="projectcontent">{props.text} <a href={props.link} target="_blank" rel="noopener noreferrer">{props.linktext}</a></div></div>
+          <div className="center">
+            <ExpandMore id={props.down}/>
+            <ExpandLess id={props.up}/>
             <a href onClick={scrollToTop}><img className="totop" src={Totop} alt=""></img></a>
-          </div></div>
-        
+          </div>
+        </div>
       </>
     )
   }
@@ -89,13 +91,13 @@ const Projects = () => {
         <div className="projectideas" id={props.id}>
           <div className="projectideasheader">
             <div className={props.c1}>
-              Project ideas?
+              What next?
             </div>
           </div>
           <div className="projectideascontent">
             <p className={props.c4}>A stock tracking application</p>
-            <p className={props.c2}>Restructuring of the weather app and the currency converter</p>
-            <p className={props.c3}>A blackjack game</p>
+            <p className={props.c2}>A blackjack game</p>
+            <p className={props.c3}></p>
             <p className={props.c5}></p>
           </div>
           <div className="projectideasfooter">
@@ -110,7 +112,7 @@ const Projects = () => {
   return(
     <>
       <Top id="top"/>
-      <Project id="p1" class="projectleft" title="Newsfeedapp" a={luokka.b} pic={newsfeedapp} b={luokka.c} text={newsfeedapptext} down="p2" up="top" link="https://newsfeedapp-by-aojarv.com"/>
+      <Project id="p1" class="projectleft" title="Newsfeedapp" a={luokka.b} pic={newsfeedapp} b={luokka.c} text={newsfeedapptext} down="p2" up="top" link="https://newsfeedapp-by-aojarv.com" linktext="newsfeedapp-by-aojarv.com"/>
 
       <Project id="p2" class="projectright" title="Portfolio" a={luokka.d} pic={portfolio} b={luokka.e} text={portfoliotext} down="p3" up="p1"/>
 

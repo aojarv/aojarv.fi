@@ -32,10 +32,10 @@ const Contact = () => {
       return(
         <div className="top">
           <div className="left">
-            <p className={luokka.a}><Linkki className="link" to="/">Home</Linkki></p>
-            <p className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></p>
-            <p className={luokka.c}><Linkki className="link" to="/projects">projects</Linkki></p>
-            <p className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></p>
+            <div className={luokka.a}><Linkki className="link" to="/">Home</Linkki></div>
+            <div className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></div>
+            <div className={luokka.c}><Linkki className="link" to="/projects">Projects</Linkki></div>
+            <div className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></div>
           </div>
           <div className="contact">
             <h1 className={luokka.e}>Contact</h1>

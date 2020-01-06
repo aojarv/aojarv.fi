@@ -21,7 +21,7 @@ const Home = () => {
             e: array[lol]+"5"
         }
         setLuokka(object)
-    }, [])
+    }, [])   
 
     return(
         <>
