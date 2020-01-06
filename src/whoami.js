@@ -10,7 +10,7 @@ const Whoami = () => {
 
   const [luokka, setLuokka] = useState({})
 
-  const text = "I am Antti Järveläinen, a 20-year-old university student from Turku, Finland."
+  const text = "I am Antti Järveläinen, a 21-year-old university student from Turku, Finland."
 
     useEffect (() => {
         

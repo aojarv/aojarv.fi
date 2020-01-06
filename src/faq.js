@@ -85,7 +85,7 @@ const Faq = () => {
       <div className="qna" id={props.id}>
         <div className="cont1">
           <Qna color={props.c3} q="Which languages do you know?" a="Finnish, English, Swedish, German"/>
-          <Qna color={props.c4} q="Conscription?" a="Looking to get into Air Forces' pilot training (flight reserve officer course, lentoRUK) in summer 2021 after having completed my Bachelor's degree. Not sure yet tho."/>
+          <Qna color={props.c4} q="Conscription?" a="In the future. Interested in reserve officer course or pilot training. Not sure yet tho."/>
           <Qna color={props.c1} q="Interests?" a="Investing (in shares and ETFs) is the biggest one at the moment"/>
         </div>
         <div className="cont2">

@@ -14,7 +14,7 @@ const Projects = () => {
 
   const [luokka, setLuokka] = useState({})
 
-  const newsfeedapptext = "A newsfeed app that I created by using React and NodeJS. Currently runs in AWS. Fetches data from The New York Times' API and displays 20 newest articles, articles from 26 different sections and most shared and viewed articles of The NY Times."
+  const newsfeedapptext = "A newsfeed app that I created by using React and NodeJS. Currently runs in AWS. Fetches data from The New York Times' API and displays 20 newest articles, articles from 26 different sections and most shared and viewed articles of The NY Times. Scrappy design staright outta 90's, but does what I created it for."
 
   const portfoliotext = "aojarv.fi, this site. I created this one to introduce me and my projects. Created by using React. Runs on Google Firebase. Focus was on design and creating well structured code. Still a lot to be improved. Will try to keep this site up to date."
 
@@ -97,7 +97,7 @@ const Projects = () => {
           <div className="projectideascontent">
             <p className={props.c4}>A stock tracking application</p>
             <p className={props.c2}>A blackjack game</p>
-            <p className={props.c3}></p>
+            <p className={props.c3}>+ More</p>
             <p className={props.c5}></p>
           </div>
           <div className="projectideasfooter">
@@ -112,13 +112,46 @@ const Projects = () => {
   return(
     <>
       <Top id="top"/>
-      <Project id="p1" class="projectleft" title="Newsfeedapp" a={luokka.b} pic={newsfeedapp} b={luokka.c} text={newsfeedapptext} down="p2" up="top" link="https://newsfeedapp-by-aojarv.com" linktext="newsfeedapp-by-aojarv.com"/>
+      <Project  id="p1" 
+                class="projectleft" 
+                title="Newsfeedapp" 
+                a={luokka.b} 
+                pic={newsfeedapp} 
+                b={luokka.c} 
+                text={newsfeedapptext} 
+                down="p2" 
+                up="top" 
+                link="https://newsfeedapp-by-aojarv.com" 
+                linktext="newsfeedapp-by-aojarv.com"/>
 
-      <Project id="p2" class="projectright" title="Portfolio" a={luokka.d} pic={portfolio} b={luokka.e} text={portfoliotext} down="p3" up="p1"/>
+      <Project  id="p2" 
+                class="projectright" 
+                title="Portfolio" 
+                a={luokka.d} 
+                pic={portfolio} 
+                b={luokka.e} 
+                text={portfoliotext} 
+                down="p3" 
+                up="p1"/>
 
-      <Project id="p3" class="projectleft" title="Weatherapp and Currency Converter" a={luokka.c} pic={weatherapp} pic2={currencyconverter} b={luokka.a} text={CCandWAtext} down="p4" up="p2"/>
+      <Project  id="p3" 
+                class="projectleft" 
+                title="Weatherapp and Currency Converter" 
+                a={luokka.c} 
+                pic={weatherapp} 
+                pic2={currencyconverter} 
+                b={luokka.a} 
+                text={CCandWAtext} 
+                down="p4" 
+                up="p2"/>
 
-      <NextProjects id="p4" up="p3" c1={luokka.a} c2={luokka.b} c3={luokka.c} c4={luokka.d} c5={luokka.e}/>
+      <NextProjects   id="p4" 
+                      up="p3" 
+                      c1={luokka.a} 
+                      c2={luokka.b} 
+                      c3={luokka.c} 
+                      c4={luokka.d} 
+                      c5={luokka.e}/>
     </>
   )
 }

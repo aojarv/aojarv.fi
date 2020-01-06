@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+body{
+  background: white;
+  font-family: 'Saira Stencil One', cursive;
+  
+}
+
+  .link{
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform .2s;
+  }
+
+  .link:hover {
+    transform: scale(1.2);
+  }
+
+  .whoami{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .projects{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+  .faq{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact{
+    color: inherit;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .con{
+    height: 100vh;
+  }
+
+  .howtocontact{
+    height: 100vh;
+    text-align: center;
+    margin-top: 40vh;
+  }
+
+  .right{
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .left{
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .project{
+    height: 100vh;
+    background-color: grey;
+  }
+
+  .projekti{
+    height: 100vh;
+  }
+
+  .linkki{
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  .linkki:hover{
+    transform: scale(1.2);
+  }
+
+  .a{
+    transition: transform .2s;
+  }
+
+  .a:hover{
+    transform: scale(1.2);
+  }
+
+  .zoom {
+    transition: transform .2s;
+    width: 7%;
+    height: 7%;
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2); 
+  }

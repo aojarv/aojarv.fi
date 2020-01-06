@@ -84,7 +84,7 @@
 }
 
 .projectcontent{
-  font-size: 5vh;
+  font-size: 4vh;
   margin-top: 2vh;
 }
 
@@ -93,6 +93,8 @@
   text-align: left;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
+  padding-left: 50px;
+  padding-right: 50px;
   
 }
 
@@ -101,6 +103,8 @@
   text-align: right;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .projectpicture{
@@ -238,7 +242,8 @@
     text-align: left;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
-    
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .projectright{
@@ -246,6 +251,8 @@
     text-align: right;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .projectpicture{
