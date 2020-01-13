@@ -3,6 +3,7 @@ import { Link } from 'react-scroll'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './css/expandicon.css'
 
+// Arrow button for moving between components
 const ExpandMore = (props) => {
     return(
         <Link 

@@ -81,6 +81,7 @@
     text-align: center;
     padding-top: 50px;
     width: 100%;
+    margin-top: 30vh;
   }
 
   .bottomofbottom{
@@ -95,11 +96,11 @@
   *
   */
   .github{
-    width: 20vw;
+    width: 10vw;
   }
 
   .linkedin{
-    width: 40vw;
+    width: 15vw;
   }
 
   .linkedin:hover{

@@ -43,8 +43,10 @@
   .link:hover {
     text-transform: uppercase;
   }
-
-
+  
+  a{
+    color: inherit;
+  }
 
   /** Settings for expand buttons
   *
@@ -134,6 +136,8 @@
   font-size: 5vh;
   flex: 8;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .projectideasfooter{
@@ -281,6 +285,8 @@
     font-size: 20px;
     flex: 8;
     text-align: center;
+    padding-left: 0px;
+  padding-right: 0px;
   }
 
   .projectideasfooter{

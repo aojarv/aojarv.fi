@@ -7,9 +7,10 @@ const Home = () => {
 
     const [luokka, setLuokka] = useState({})
 
+    // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
 
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee", "ff" ]
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -21,20 +22,49 @@ const Home = () => {
             e: array[lol]+"5"
         }
         setLuokka(object)
-    }, [])   
+    }, [])  
+    
+    const links = [
+        {
+            to: "/whoami",
+            text: "Who am I",
+            cn: luokka.b
+        },
+        {
+            to: "/projects",
+            text: "Projects",
+            cn: luokka.c
+        },
+        {
+            to: "/faq",
+            text: "Faq",
+            cn: luokka.d
+        },
+        {
+            to: "/contact",
+            text: "Contact",
+            cn: luokka.e
+        }
+    ]
 
+    const linksfromhome = links.map(item => <div className="links"><div className={item.cn}><Link className="link" to={item.to}><div className="linktext">{item.text}</div></Link></div></div>)
+
+    const Name = (props) => {
+        return(
+            <div>
+                <div className={luokka.a}>
+                    <div className="header"><h1>{props.name}</h1></div>
+                </div>
+            </div>
+        )
+    }
+
+    // Renders the home page
     return(
         <>
             <div className="home">
-                <div className={luokka.a}>
-                    <h1>ANTTI JÄRVELÄINEN</h1>
-                </div>
-                <div>
-                    <div className={luokka.b}><Link className="link" to="/whoami">Who am I</Link></div>
-                    <div className={luokka.c}><Link className="link" to="/projects">Projects</Link></div>
-                    <div className={luokka.d}><Link className="link" to="/faq">Faq</Link></div>
-                    <div className={luokka.e}><Link className="link" to="/contact">Contact</Link></div>
-                </div>
+                <Name name="ANTTI JÄRVELÄINEN"/>
+                {linksfromhome}
             </div>
         </>
     )

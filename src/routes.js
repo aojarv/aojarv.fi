@@ -9,6 +9,7 @@ import Projects from './projects.js'
 import Faq from './faq.js'
 import Contact from './contact.js'
 
+// Defines routed for different components
 const Routes = () => {
   return(
     <>

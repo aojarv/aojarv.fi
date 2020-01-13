@@ -60,7 +60,6 @@
     display: flex;
     flex-direction: column;
     font-size: inherit;
-    width: 100%;
   }
 
   .antti{
@@ -69,20 +68,19 @@
     text-align: center;
     padding-top: 2vh;
     margin: 1vh;
-    width: 100%;
+    
   }
 
   .pic{
     flex: 4;
     display: flex;
     justify-content: center;
-    margin: 1vh;
-    width: 100%;
+    margin: 5px;
   }
 
   .pictureofantti{
     height: 40vh;
-    border: 3px solid white;
+    border: 3px solid #537895;
     border-radius: 20px;
   }
 

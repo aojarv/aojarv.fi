@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Saira+Stencil+One&display=swap');
 
 body{
-  background: white;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
   font-family: 'Saira Stencil One', cursive;
+}
+
+@media screen and (max-width: 900px) {
+  body{
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    font-family: 'Oswald', sans-serif;
+  }
 }

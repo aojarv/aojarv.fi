@@ -3,15 +3,7 @@ import ReactDOM from 'react-dom'
 import Routes from './routes.js'
 import './css/index.css'
 
-const App = () => {
-  return(
-    <>
-      <Routes/>
-    </>
-  )
-}
-
 ReactDOM.render(
-  <App />,
+  <Routes />,
   document.getElementById('root')
 )

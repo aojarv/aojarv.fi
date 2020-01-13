@@ -1,46 +1,49 @@
 .a1{
-    color: #A73529;
-  }
-  
-  .a2{
-    color: #391E1A;
-  }
-  
-  .a3{
-    color: #C08B78;
-  }
-  
-  .a4{
     color: #719FAE;
   }
   
-  .a5{
+  .a2{
+    color: #C08B78;
+  }
+  
+  .a3{
+    color: #A73529;
+  }
+  
+  .a4{
     color: #6D4C43;
-  
   }
   
+  .a5{
+    color: #391E1A;
+  }
+  
+
+
   .b1{
-    color: #1D694E;
-  }
-  
-  .b2{
-    color: #AD291A;
-  }
-  
-  .b3{
     color: #BDA27B;
   }
   
-  .b4{
+  .b2{
     color: #684232;
+  }
+  
+  .b3{
+    color: #AD291A;
+  }
+  
+  .b4{
+    color: #1D694E;
   }
   
   .b5{
     color: #0D0D0D;
   }
   
+
+
   .c1{
-    color: #AD291A;
+    color: #BDA27B;
   }
   
   .c2{
@@ -48,47 +51,51 @@
   }
   
   .c3{
-    color: #BDA27B;
+    color: #684232;
   }
   
   .c4{
-    color: #684232;
+    color: #AD291A;
   }
   
   .c5{
     color: #0D0D0D;
   }
   
+
+
   .d1{
-    color: #0467BE;
-  }
-  
-  .d2{
-    color: #9F5006;
-  }
-  
-  .d3{
     color: #F1D41C;
   }
   
-  .d4{
+  .d2{
     color: #09B2DC;
+  }
+  
+  .d3{
+    color: #9F5006;
+  }
+  
+  .d4{
+    color: #0467BE;
   }
   
   .d5{
     color: #040505;
   }
 
+
+
   .e1{
     color: #F8F2E1;
   }
 
   .e2{
-    color: #D49161;
+    color: #65B4BF;
   }
 
   .e3{
-    color: #324345;
+    color: #D49161;
   }
 
   .e4{
@@ -96,28 +103,32 @@
   }
 
   .e5{
-    color: #65B4BF;
+    color: #324345;
   }
   
+
+
   .f1{
-    color: #8C542C;
-  }
-
-  .f2{
-    color: #1C3344;
-  }
-
-  .f3{
     color: #B8B9AD;
   }
 
+  .f2{
+    color: #7B999D;
+  }
+
+  .f3{
+    color: #8C542C;
+  }
+
   .f4{
-    color: #141B21;
+    color: #1C3344;
   }
 
   .f5{
-    color: #7B999D;
+    color: #141B21;
   }
+
+
 
   .g1{
     color: #F65164;
@@ -128,16 +139,18 @@
   }
 
   .g3{
-    color: #140505;
-  }
-
-  .g4{
     color: #C1202B;
   }
 
-  .g5{
+  .g4{
     color: #620A0D;
   }
+
+  .g5{
+    color: #140505;
+  }
+
+
 
   .h1{
     color: #DCE7EF;
@@ -148,96 +161,84 @@
   }
 
   .h3{
-    color: #1E1D1B;
-  }
-
-  .h4{
     color: #5C7DA1;
   }
 
-  .h5{
+  .h4{
     color: #394367;
   }
 
+  .h5{
+    color: #1E1D1B;
+  }
+
+
+
   .i1{
-    color: #1069CC;
-  }
-
-  .i2{
-    color: #123B96;
-  }
-
-  .i3{
     color: #D0BFB6;
   }
 
-  .i4{
+  .i2{
     color: #3AA3E1;
+  }
+
+  .i3{
+    color: #1069CC;
+  }
+
+  .i4{
+    color: #123B96;
   }
 
   .i5{
     color: #101028;
   }
 
+
+
   .j1{
-    color: #057989;
-  }
-
-  .j2{
-    color: #E32D2D;
-  }
-
-  .j3{
     color: #DABC69;
   }
 
-  .j4{
-    color: #190E09;
-  }
-
-  .j5{
+  .j2{
     color: #649381;
   }
 
-  .k1{
-    color: #964E1E;
+  .j3{
+    color: #057989;
   }
 
-  .k2{
-    color: #C9B12B;
+  .j4{
+    color: #E32D2D;
   }
 
-  .k3{
-    color: #337EAC;
+  .j5{
+    color: #190E09;
   }
 
-  .k4{
-    color: #204873;
-  }
 
-  .k5{
-    color: #59A4BA;
-  }
 
   .l1{
-    color: #D7323C;
-  }
-
-  .l2{
-    color: #31347C;
-  }
-
-  .l3{
-    color: #080508;
-  }
-
-  .l4{
     color: #6F8883;
   }
 
-  .l5{
+  .l2{
+    color: #D7323C;
+  }
+
+  .l3{
     color: #49514F;
   }
+
+  .l4{
+    color: #31347C;
+  }
+
+  .l5{
+    color: #080508;
+  }
+
+
 
   .m1{
     color: #0595FB;
@@ -259,72 +260,58 @@
     color: #7D3FB0;
   }
 
-  .n1{
-    color: #CD8037;
-  }
 
-  .n2{
+
+  .n1{
     color: #D7B47C;
   }
 
-  .n3{
+  .n2{
     color: #84A7B9;
   }
 
-  .n4{
-    color: #53342C;
+  .n3{
+    color: #CD8037;
   }
 
-  .n5{
+  .n4{
     color: #8C7F8A;
   }
 
+  .n5{
+    color: #53342C;
+  }
+
+
+
   .o1{
-    color: #057989;
-  }
-
-  .o2{
-    color: #E32D2D;
-  }
-
-  .o3{
     color: #DABC69;
   }
 
-  .o4{
-    color: #190E09;
-  }
-
-  .o5{
+  .o2{
     color: #649381;
   }
 
-  .p1{
-    color: #851A2D;
+  .o3{
+    color: #E32D2D;
   }
 
-  .p2{
-    color: #F0E7CF;
+  .o4{
+    color: #057989;
   }
 
-  .p3{
-    color: #A14D42;
+  .o5{
+    color: #190E09;
   }
 
-  .p4{
-    color: #5698AB;
-  }
 
-  .p5{
-    color: #415768;
-  }
 
   .q1{
-    color: #8C1071;
+    color: #23CABE;
   }
 
   .q2{
-    color: #3B127B;
+    color: #1F88A7;
   }
 
   .q3{
@@ -332,19 +319,21 @@
   }
 
   .q4{
-    color: #23CABE;
+    color: #8C1071;
   }
 
   .q5{
-    color: #1F88A7;
+    color: #3B127B;
   }
+
+
 
   .r1{
     color: #F9B479;
   }
 
   .r2{
-    color: #EE4335;
+    color: #E89446;
   }
 
   .r3{
@@ -352,52 +341,36 @@
   }
 
   .r4{
-    color: #E89446;
+    color: #EE4335;
   }
 
   .r5{
     color: #060504;
   }
 
-  .s1{
-    color: #D6A045;
-  }
 
-  .s2{
+
+  .s1{
     color: #F3EADA;
   }
 
+  .s2{
+    color: #D6A045;
+  }
+
   .s3{
-    color: #6882AD;
+    color: #9B9188;
   }
 
   .s4{
-    color: #9B9188;
+    color: #6882AD;
   }
 
   .s5{
     color: #514741;
   }
 
-  .t1{
-    color: #E48822;
-  }
 
-  .t2{
-    color: #C23C25;
-  }
-
-  .t3{
-    color: #0B0A0A;
-  }
-
-  .t4{
-    color: #C4A674;
-  }
-
-  .t5{
-    color: #749068;
-  }
 
   .u1{
     color: #7EAFF2;
@@ -408,7 +381,7 @@
   }
 
   .u3{
-    color: #221210;
+    color: #CC8778;
   }
 
   .u4{
@@ -416,31 +389,35 @@
   }
 
   .u5{
-    color: #CC8778;
+    color: #221210;
   }
+
+
 
   .v1{
-    color: #7CD4E4;
-  }
-
-  .v2{
-    color: #53BBDB;
-  }
-
-  .v3{
     color: #CBA6b9;
   }
 
-  .v4{
-    color: #331F29;
+  .v2{
+    color: #7CD4E4;
   }
 
-  .v5{
+  .v3{
+    color: #53BBDB;
+  }
+
+  .v4{
     color: #5F6555;
   }
 
+  .v5{
+    color: #331F29;
+  }
+
+
+
   .w1{
-    color: #E22245;
+    color: #D8D3C7;
   }
 
   .w2{
@@ -448,19 +425,22 @@
   }
 
   .w3{
-    color: #39323D;
+    color: #E22245;
+
   }
 
   .w4{
-    color: #D8D3C7;
-  }
-
-  .w5{
     color: #745149;
   }
 
+  .w5{
+    color: #39323D;
+  }
+
+
+
   .x1{
-    color: #E9D35C;
+    color: #9BC7CE;
   }
 
   .x2{
@@ -468,19 +448,21 @@
   }
 
   .x3{
-    color: #424B4D;
+    color: #E9D35C;
   }
 
   .x4{
-    color: #9BC7CE;
-  }
-
-  .x5{
     color: #76ABB1;
   }
 
+  .x5{
+    color: #424B4D;
+  }
+
+
+
   .y1{
-    color: #104C8C;
+    color: #5AB273;
   }
 
   .y2{
@@ -488,67 +470,73 @@
   }
 
   .y3{
-    color: #5AB273;
-  }
-
-  .y4{
-    color: #233619;
-  }
-
-  .y5{
     color: #426229;
   }
 
+  .y4{
+    color: #104C8C;
+  }
+
+  .y5{
+    color: #233619;
+  }
+
+
+
   .z1{
-    color: #2C1474;
-  }
-
-  .z2{
-    color: #4E2AA0;
-  }
-
-  .z3{
-    color: #332E21;
-  }
-
-  .z4{
     color: #C6C2BB;
   }
 
-  .z5{
+  .z2{
     color: #9BA39C;
   }
 
-  .aa1{
-    color: #D29B31;
+  .z3{
+    color: #4E2AA0;
   }
 
-  .aa2{
+  .z4{
+    color: #332E21;
+  }
+
+  .z5{
+    color: #2C1474;
+  }
+
+
+
+  .aa1{
     color: #9EE4D9;
   }
 
-  .aa3{
-    color: #3A3734;
-  }
-
-  .aa4{
+  .aa2{
     color: #6ABBBF;
   }
 
-  .aa5{
+  .aa3{
+    color: #D29B31;
+  }
+
+  .aa4{
     color: #923930;
   }
 
-  .bb1{
-    color: #F49A25;
+  .aa5{
+    color: #3A3734;
   }
 
-  .bb2{
+
+
+  .bb1{
     color: #F5D58B;
   }
 
+  .bb2{
+    color: #F49A25;
+  }
+
   .bb3{
-    color: #3F341E;
+    color: #8A6D4C;
   }
 
   .bb4{
@@ -556,51 +544,57 @@
   }
 
   .bb5{
-    color: #8A6D4C;
+    color: #3F341E;
   }
+
+
 
   .cc1{
-    color: #E0573D;
-  }
-
-  .cc2{
-    color: #463557;
-  }
-
-  .cc3{
     color: #C4AAC5;
   }
 
+  .cc2{
+    color: #86728B;
+  }
+
+  .cc3{
+    color: #E0573D;
+  }
+
   .cc4{
-    color: #241A27;
+    color: #463557;
   }
 
   .cc5{
-    color: #86728B;
+    color: #241A27;
   }
+
+
 
   .dd1{
     color: #DEB51E;
   }
 
   .dd2{
-    color: #185229;
-  }
-
-  .dd3{
     color: #C95848;
   }
 
-  .dd4{
-    color: #17100B;
-  }
-
-  .dd5{
+  .dd3{
     color: #4B9B45;
   }
 
+  .dd4{
+    color: #185229;
+  }
+
+  .dd5{
+    color: #17100B;
+  }
+
+
+
   .ee1{
-    color: #0E4484;
+    color: #B59B87;
   }
 
   .ee2{
@@ -608,34 +602,13 @@
   }
 
   .ee3{
-    color: #152036;
-  }
-
-  .ee4{
-    color: #B59B87;
-  }
-
-  .ee5{
     color: #1F6299;
   }
 
-  .ff1{
-    color: #3B4E93
-    ;
+  .ee4{
+    color: #0E4484;
   }
 
-  .ff2{
-    color: #0D0A17;
-  }
-
-  .ff3{
-    color: #BE8F91;
-  }
-
-  .ff4{
-    color: #42423F;
-  }
-
-  .ff5{
-    color: #5772B1;
+  .ee5{
+    color: #152036;
   }

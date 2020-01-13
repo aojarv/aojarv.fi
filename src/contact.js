@@ -3,7 +3,7 @@ import './css/contact.css'
 import { Link as Linkki } from 'react-router-dom'
 //import Github from './icons/GitHub-Mark-120px-plus.png'
 import Github from './icons/github.png'
-import Linkedin from './icons/LI-In-Bug.png'
+import Linkedin from './icons/linked.png'
 import ExpandMore from './ExpandMoreIcon.js';
 import ExpandLess from './ExpandLessIcon'
 
@@ -11,9 +11,10 @@ const Contact = () => {
 
     const [luokka, setLuokka] = useState({})
 
+    // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee", "ff" ]
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -27,7 +28,7 @@ const Contact = () => {
         setLuokka(object)
     }, [])
 
-
+    //Component for "top", the links to other components and a header are rendered here
     const Top = () => {
       return(
         <div className="top">
@@ -48,7 +49,7 @@ const Contact = () => {
       )
     }
 
-
+    // Component for the links to my GitHub and LinkedIn
     const HowToContact = (props) => {
       return(
         <>

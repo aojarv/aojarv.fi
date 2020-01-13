@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './css/projects.css'
+import './css/colors.css'
 import { Link as Linkki } from 'react-router-dom'
 import { animateScroll as scroll } from "react-scroll";
 import ExpandMore from './ExpandMoreIcon';
@@ -20,9 +21,10 @@ const Projects = () => {
 
   const CCandWAtext = "For example a weatherapp and a currency converter. Simple projects that I created by using React just to learn to use APIs. Scrappy design and poor structure in codes. No backend. Will make them better at some point."
 
+    // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee", "ff" ]
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -36,14 +38,12 @@ const Projects = () => {
         setLuokka(object)
     }, [])
 
-
-
+    // A method for scrolling to top
     const scrollToTop = () => {
       scroll.scrollToTop();
     }
 
-
-
+    // Component for "top", the links to other components and a header are rendered here
     const Top = () => {
       return(
         <div className="top">
@@ -52,25 +52,24 @@ const Projects = () => {
             <div className={luokka.b}><Linkki className="link" to="/whoami">Who am I</Linkki></div>
           </div>
           <div className="projects">
-            <h1 className={luokka.e}>Projects</h1>
+            <h1 className={luokka.c}>Projects</h1>
             <ExpandMore id="p1"/>
           </div>
           <div className="right">
-            <div className={luokka.c}><Linkki className="link" to="/faq">Faq</Linkki></div>
-            <div className={luokka.d}><Linkki className="link" to="/contact">Contact</Linkki></div>
+            <div className={luokka.d}><Linkki className="link" to="/faq">Faq</Linkki></div>
+            <div className={luokka.e}><Linkki className="link" to="/contact">Contact</Linkki></div>
           </div>
         </div>
       )
     }
 
-
-
+  // Project component that gets information as props.
   const Project = (props) => {
     return(
       <>
         <div className={props.class} id={props.id}>
           <div className={props.a}><div className="projectheader">{props.title}</div></div>
-          <div className={props.b}><div className="projectcontent">{props.text} <a href={props.link} target="_blank" rel="noopener noreferrer">{props.linktext}</a></div></div>
+          <div className={props.a}><div className="projectcontent">{props.text} <a className={props.b} href={props.link} target="_blank" rel="noopener noreferrer">{props.linktext}</a></div></div>
           <div className="center">
             <ExpandMore id={props.down}/>
             <ExpandLess id={props.up}/>
@@ -84,7 +83,7 @@ const Projects = () => {
   //<div><img className="projectpicture" src={props.pic}></img></div>
 
 
-
+  // Component for what I have planned to do in the future. Looks bad and I should make it better structured.
   const NextProjects = (props) => {
     return(
       <>
@@ -95,10 +94,10 @@ const Projects = () => {
             </div>
           </div>
           <div className="projectideascontent">
-            <p className={props.c4}>A stock tracking application</p>
-            <p className={props.c2}>A blackjack game</p>
-            <p className={props.c3}>+ More</p>
-            <p className={props.c5}></p>
+            <p className={props.c2}>A stock tracking application, a blackjack game, some bigger project would be cool to create</p>
+            <p className={props.c3}>Learning mongoDB, VueJS, AngularJS, getting better with AWS</p>
+            <p className={props.c4}>Getting better in writing Python</p>
+            <p className={props.c5}>+ Much more</p>
           </div>
           <div className="projectideasfooter">
             <ExpandLess id={props.up}/>
@@ -109,15 +108,15 @@ const Projects = () => {
     )
   }
 
+  // Renders the whole page
   return(
     <>
       <Top id="top"/>
       <Project  id="p1" 
                 class="projectleft" 
                 title="Newsfeedapp" 
-                a={luokka.b} 
-                pic={newsfeedapp} 
-                b={luokka.c} 
+                a={luokka.a} 
+                pic={newsfeedapp}  
                 text={newsfeedapptext} 
                 down="p2" 
                 up="top" 
@@ -127,9 +126,8 @@ const Projects = () => {
       <Project  id="p2" 
                 class="projectright" 
                 title="Portfolio" 
-                a={luokka.d} 
+                a={luokka.b} 
                 pic={portfolio} 
-                b={luokka.e} 
                 text={portfoliotext} 
                 down="p3" 
                 up="p1"/>
@@ -140,10 +138,11 @@ const Projects = () => {
                 a={luokka.c} 
                 pic={weatherapp} 
                 pic2={currencyconverter} 
-                b={luokka.a} 
                 text={CCandWAtext} 
                 down="p4" 
-                up="p2"/>
+                up="p2"
+                link="https://currencyconverter-3d172.firebaseapp.com/"
+                linktext="Currency Converter"/>
 
       <NextProjects   id="p4" 
                       up="p3" 

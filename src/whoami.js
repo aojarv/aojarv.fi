@@ -12,9 +12,10 @@ const Whoami = () => {
 
   const text = "I am Antti Järveläinen, a 21-year-old university student from Turku, Finland."
 
+    // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee", "ff" ]
+        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -28,14 +29,15 @@ const Whoami = () => {
         setLuokka(object)
     }, [])
 
+    // Component for "top", the links to other components and a header are rendered here
     const Top = (props) => {
       return(
         <div className="top" id={props.id}>
           <div className="left">
-            <div className={luokka.b}><Linkki className="link" to="/">Home</Linkki></div>
+            <div className={luokka.a}><Linkki className="link" to="/">Home</Linkki></div>
           </div>
           <div className="whoami">
-            <div className={luokka.a}><h1>Who am i?</h1></div>
+            <div className={luokka.b}><h1>Who am i?</h1></div>
             <ExpandMore id="who"/>
           </div>
           <div className="right">
@@ -47,6 +49,7 @@ const Whoami = () => {
       )
     }
 
+    // Component for the info box
     const Bottom = (props) => {
       return(
         <>
@@ -68,7 +71,7 @@ const Whoami = () => {
   return(
     <>
       <Top id="top"/>
-      <Bottom id="who" a={luokka.a}/>
+      <Bottom id="who" a={luokka.c}/>
     </>
   )
 }
