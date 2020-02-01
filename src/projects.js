@@ -24,7 +24,7 @@ const Projects = () => {
     // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
+        const array = [ "a", "d", "e", "f", "g", "m", "n", "o", "q", "s", "x", "aa", "bb", "dd"]
         
         const lol = Math.floor(Math.random() * array.length)
 
@@ -95,7 +95,7 @@ const Projects = () => {
           </div>
           <div className="projectideascontent">
             <p className={props.c2}>A stock tracking application, a blackjack game, some bigger project would be cool to create</p>
-            <p className={props.c3}>Learning mongoDB, VueJS, AngularJS, getting better with AWS</p>
+            <p className={props.c3}>Learning TypeScript, VueJS, AngularJS, getting better with AWS</p>
             <p className={props.c4}>Getting better in writing Python</p>
             <p className={props.c5}>+ Much more</p>
           </div>

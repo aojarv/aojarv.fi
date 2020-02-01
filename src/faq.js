@@ -19,7 +19,7 @@ const Faq = () => {
   // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
   useEffect (() => {
         
-    const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
+    const array = [ "a", "d", "e", "f", "g", "m", "n", "o", "q", "s", "x", "aa", "bb", "dd"]
         
     const lol = Math.floor(Math.random() * array.length)
 
@@ -75,7 +75,7 @@ const Faq = () => {
       <div className="qna" id={props.id}>
         <div className="cont1">
           <Qna color={props.c1} q="Hobbies?" a="Videogames, road cycling, downhill skiing and many others!"/>
-          <Qna color={props.c2} q="Which coding languages do you know?" a="Python (good), Java (good), React (great), NodeJS (good), CSS (good). At the moment focus is on web development languages."/>
+          <Qna color={props.c2} q="Which coding languages do you know?" a="Python (good), Java (good), React (great), TypeScript (basics), NodeJS (good), CSS (good). At the moment focus is on web development languages."/>
           <Qna color={props.c3} q="Favourite colour?" a="Black."/>
         </div>
         <div className="cont2">
@@ -91,7 +91,7 @@ const Faq = () => {
       <div className="qna" id={props.id}>
         <div className="cont1">
           <Qna color={props.c3} q="Which languages do you know?" a="Finnish, English, Swedish, German"/>
-          <Qna color={props.c4} q="Conscription?" a="In the future. Interested in reserve officer course or pilot training. Not sure yet though."/>
+          <Qna color={props.c4} q="What do you study?" a="Computer science at University of Turku"/>
           <Qna color={props.c5} q="Interests?" a="Investing (in shares and ETFs) is the biggest one at the moment"/>
         </div>
         <div className="cont2">

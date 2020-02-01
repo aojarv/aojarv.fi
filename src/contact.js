@@ -14,7 +14,7 @@ const Contact = () => {
     // Always when the component renders, a random color palette of 5 colors from colors.css is chosen
     useEffect (() => {
         
-        const array = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "q", "r", "s", "u", "v", "w", "x", "y", "z", "aa", "bb", "cc", "dd", "ee"]
+        const array = [ "a", "d", "e", "f", "g", "m", "n", "o", "q", "s", "x", "aa", "bb", "dd"]
         
         const lol = Math.floor(Math.random() * array.length)
 
