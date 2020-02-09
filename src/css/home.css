@@ -1,65 +1,64 @@
-
-  /** Settings when screen width is 900px or more
+/** Settings when screen width is 900px or more
   *
   *
   */
-  .link{
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.link:hover {
+  text-transform: uppercase;
+}
+
+.links {
+  max-height: 10vh;
+  text-align: center;
+  font-size: 45px;
+}
+
+.header {
+  font-size: 50px;
+}
+
+.home {
+  height: 100vh;
+  text-align: center;
+  font-size: inherit;
+}
+
+/** Settings when screen width is less than 900px
+  *
+  *
+  */
+@media screen and (max-width: 900px) {
+  .link {
     color: inherit;
     text-decoration: none;
     font-size: 40px;
   }
 
-  .link:hover{
+  .link:hover {
     text-transform: uppercase;
   }
 
-  .links{
+  .links {
     max-height: 10vh;
     text-align: center;
-    font-size: 45px;
   }
 
-  .header{
-    font-size: 50px;
+  .linktext {
+    font-size: 40px;
   }
 
-  .home{
-    height: 100vh;
+  .header {
+    font-size: 40px;
+  }
+
+  .home {
+    height: 92vh;
     text-align: center;
     font-size: inherit;
   }
-
-  /** Settings when screen width is less than 900px
-  *
-  *
-  */
-  @media screen and (max-width: 900px) {
-    .link{
-      color: inherit;
-      text-decoration: none;
-      font-size: 40px;
-    }
-  
-    .link:hover{
-      text-transform: uppercase;
-    }
-  
-    .links{
-      max-height: 10vh;
-      text-align: center;
-    }
-
-    .linktext{
-      font-size: 40px;
-    }
-  
-    .header{
-      font-size: 40px;
-    }
-  
-    .home{
-      height: 92vh;
-      text-align: center;
-      font-size: inherit;
-    }
-  }
+}

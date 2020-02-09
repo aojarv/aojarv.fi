@@ -1,202 +1,186 @@
-  /** Settings for divs in top
+/** Settings for divs in top
   *
   *
   */
-  .top{
-    height: 100vh;
-    width: 100%;
-    font-size: inherit;
-  }
+.top {
+  height: 100vh;
+  width: 100%;
+  font-size: inherit;
+}
 
-  .faq{
-    color: inherit;
-    font-size: 7vh;
-    text-align: center;
-    width: 50%;
-  }
+.faq {
+  color: inherit;
+  font-size: 7vh;
+  text-align: center;
+  width: 50%;
+}
 
-  .right{
-    width: 50%;
-    text-align: right;
-    font-size: 4vh;
-  }
+.right {
+  width: 50%;
+  text-align: right;
+  font-size: 4vh;
+}
 
-  .left{
-    width: 50%;
-    text-align: left;
-    font-size: 4vh;
-  }
+.left {
+  width: 50%;
+  text-align: left;
+  font-size: 4vh;
+}
 
+/** Settings for links in top
+  *
+  *
+  */
+.link {
+  padding: 1vh;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
 
+.link:hover {
+  transform: scale(1.2);
+}
 
+/** Settings for scroll.totop-component
+  *
+  *
+  */
+.totop {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.1s;
+}
 
+.totop:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/** Settings for one question and answer -component
+  *
+  *
+  */
+.aandq {
+  display: inline-block;
+  margin-top: 2vh;
+  margin-right: 2vh;
+}
+
+.aandq:hover {
+  transform: rotate(1deg);
+}
+
+.question {
+  font-size: 5.5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.answer {
+  font-size: 5.5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+/** Settings for mid- and bottom-component
+  *
+  *
+  */
+.qna {
+  height: 100vh;
+}
+
+.cont1 {
+  height: 90%;
+}
+
+.cont2 {
+  height: 10%;
+}
+
+/** Setting when screen width is less than 900px
+  *
+  *
+  */
+@media screen and (max-width: 900px) {
   /** Settings for links in top
   *
   *
   */
-  .link{
-  padding: 1vh;
+  .link {
+    padding: 1vh;
     color: inherit;
     text-decoration: none;
-    transition: transform .2s;
+    transition: transform 0.2s;
+    font-size: 15px;
   }
 
   .link:hover {
     transform: scale(1.2);
   }
 
-
-  /** Settings for scroll.totop-component
-  *
-  *
-  */
-  .totop{
-    height: 40px;
-    width: 40px;
-    transition: transform .1s;
-  }
-
-  .totop:hover{
-    transform: scale(1.3);
-    cursor: pointer;
-  }
-
-
-
-  /** Settings for one question and answer -component
-  *
-  *
-  */
-  .aandq{
-    display: inline-block;
-    margin-top: 2vh;
-    margin-right: 2vh;
-  }
-
-  .aandq:hover{
-    transform: rotate(1deg);
-  }
-
-  .question{
-    font-size: 5.5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-
-  .answer{
-    font-size: 5.5vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-
-
-
-  /** Settings for mid- and bottom-component
-  *
-  *
-  */
-  .qna{
-    height: 100vh;
-  }
-
-  .cont1{
-    height: 90%;
-  }
-
-  .cont2{
-    height: 10%;
-  }
-
-
-
-
-  /** Setting when screen width is less than 900px
-  *
-  *
-  */
-  @media screen and (max-width: 900px) {
-  
-  /** Settings for links in top
-  *
-  *
-  */
-  .link{
-    padding: 1vh;
-      color: inherit;
-      text-decoration: none;
-      transition: transform .2s;
-      font-size: 15px;
-    }
-  
-    .link:hover {
-      transform: scale(1.2);
-    }
-  
   /** Settings for divs in top
   *
   *
   */
-  .top{
+  .top {
     height: 97vh;
     width: 100%;
     font-size: inherit;
   }
 
-  .faq{
+  .faq {
     color: inherit;
     font-size: 20px;
     text-align: center;
     width: 50%;
   }
 
-  .right{
+  .right {
     width: 50%;
     text-align: right;
   }
 
-  .left{
+  .left {
     width: 50%;
     text-align: left;
   }
-
-
 
   /** Settings for scroll.totop-component
   *
   *
   */
-  .totop{
+  .totop {
     height: 40px;
     width: 40px;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
-  .totop:hover{
+  .totop:hover {
     transform: scale(1.3);
     cursor: pointer;
   }
-
-
 
   /** Settings for one question and answer -component
   *
   *
   */
-  .aandq{
+  .aandq {
     display: inline-block;
     margin-top: 2vh;
     margin-right: 2vh;
   }
 
-  .aandq:hover{
+  .aandq:hover {
     transform: rotate(1deg);
   }
 
-  .question{
+  .question {
     font-size: 20px;
     margin-left: 5vh;
     margin-right: 5vh;
@@ -204,29 +188,27 @@
     margin-bottom: 2vh;
   }
 
-  .answer{
+  .answer {
     font-size: 20px;
     margin-left: 5vh;
     margin-right: 5vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
-
-
 
   /** Settings for mid- and bottom-component
   *
   *
   */
-  .qna{
+  .qna {
     height: 97vh;
   }
 
-  .cont1{
+  .cont1 {
     height: 90%;
   }
 
-  .cont2{
+  .cont2 {
     height: 10%;
   }
 }

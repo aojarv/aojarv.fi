@@ -1,223 +1,210 @@
-  /** Settings for divs in top
+/** Settings for divs in top
   *
   *
   */
-  .top{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: inherit;
-  }
+.top {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: inherit;
+}
 
-  .contact{
-    color: inherit;
-    font-size: 7vh;
-    text-align: center;
-    width: 50%;
-    flex: 2;
-  }
+.contact {
+  color: inherit;
+  font-size: 7vh;
+  text-align: center;
+  width: 50%;
+  flex: 2;
+}
 
-  .right{
-    width: 25%;
-    text-align: right;
-    font-size: 4vh;
-    flex: 1;
-  }
+.right {
+  width: 25%;
+  text-align: right;
+  font-size: 4vh;
+  flex: 1;
+}
 
-  .left{
-    width: 25%;
-    text-align: left;
-    font-size: 4vh;
-    flex: 1;
-  }
+.left {
+  width: 25%;
+  text-align: left;
+  font-size: 4vh;
+  flex: 1;
+}
 
-
-
-  /** Settings for links in top
+/** Settings for links in top
   *
   *
   */
-  .link{
-    padding: 1vh;
-    color: inherit;
-    text-decoration: none;
-    transition: transform .2s;
-  }
+.link {
+  padding: 1vh;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
 
-  .link:hover {
-    transform: scale(1.2);
-  }
+.link:hover {
+  transform: scale(1.2);
+}
 
-
-
-  /** Settings for scroll.toptop-component
+/** Settings for scroll.toptop-component
   *
   *
   */
-  .totop{
-    height: 40px;
-    width: 40px;
-    transition: transform .1s;
-  }
+.totop {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.1s;
+}
 
-  .totop:hover{
-    transform: scale(1.3);
-    cursor: pointer;
-  }
+.totop:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
 
-
-
-  /** Settings for bottom-component
+/** Settings for bottom-component
   *
   *
   */
-  .bottom{
-    height: 100vh;
-  }
+.bottom {
+  height: 100vh;
+}
 
-  .topofbottom{
-    height: 90%;
-    text-align: center;
-    padding-top: 50px;
-    width: 100%;
-    margin-top: 30vh;
-  }
+.topofbottom {
+  height: 90%;
+  text-align: center;
+  padding-top: 50px;
+  width: 100%;
+  margin-top: 30vh;
+}
 
-  .bottomofbottom{
-    height: 10%;
-    text-align: center;
-    width: 100%;
-  }
+.bottomofbottom {
+  height: 10%;
+  text-align: center;
+  width: 100%;
+}
 
-
-  /** Settings for image-buttons in bottom-component
+/** Settings for image-buttons in bottom-component
   *
   *
   */
-  .github{
-    width: 10vw;
-  }
+.github {
+  width: 10vw;
+}
 
-  .linkedin{
-    width: 15vw;
-  }
+.linkedin {
+  width: 15vw;
+}
 
-  .linkedin:hover{
-    transform: scale(1.05);
-  }
+.linkedin:hover {
+  transform: scale(1.05);
+}
 
-  .github:hover{
-    transform: scale(1.1);
-  } 
-
+.github:hover {
+  transform: scale(1.1);
+}
 
 /** Settings when screen width is less than 900px
 *
 *
 */
 @media screen and (max-width: 900px) {
-    /** Settings for links in top
+  /** Settings for links in top
   *
   *
   */
-  .link{
+  .link {
     padding: 1vh;
     color: inherit;
     text-decoration: none;
-    transition: transform .2s;
+    transition: transform 0.2s;
     font-size: 15px;
   }
 
   .link:hover {
     transform: scale(1.2);
   }
-  
-  
+
   /** Settings for divs in top
   *
   *
   */
-  .top{
+  .top {
     height: 97vh;
     width: 100%;
     font-size: inherit;
   }
 
-  .contact{
+  .contact {
     color: inherit;
     font-size: 20px;
     text-align: center;
     width: 50%;
   }
 
-  .right{
+  .right {
     width: 25%;
     text-align: right;
   }
 
-  .left{
+  .left {
     width: 25%;
     text-align: left;
   }
-
 
   /** Settings for scroll.toptop-component
   *
   *
   */
-  .totop{
+  .totop {
     height: 40px;
     width: 40px;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
-  .totop:hover{
+  .totop:hover {
     transform: scale(1.3);
     cursor: pointer;
   }
-
-
 
   /** Settings for bottom-component
   *
   *
   */
-  .bottom{
+  .bottom {
     height: 97vh;
   }
 
-  .topofbottom{
+  .topofbottom {
     height: 90%;
     text-align: center;
     padding-top: 50px;
     width: 100%;
   }
 
-  .bottomofbottom{
+  .bottomofbottom {
     height: 10%;
     text-align: center;
     width: 100%;
   }
 
-
   /** Settings for image-buttons in bottom-component
   *
   *
   */
-  .github{
+  .github {
     width: 20vw;
   }
 
-  .linkedin{
+  .linkedin {
     width: 40vw;
   }
 
-  .linkedin:hover{
+  .linkedin:hover {
     transform: scale(1.05);
   }
 
-  .github:hover{
+  .github:hover {
     transform: scale(1.1);
-  } 
+  }
 }

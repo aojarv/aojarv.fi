@@ -2,105 +2,98 @@
 *
 *
 */
-  .top{
-    height: 100vh;
-    width: 100%;
-    font-size: inherit;
-  }
+.top {
+  height: 100vh;
+  width: 100%;
+  font-size: inherit;
+}
 
-  .right{
-    width: 25%;
-    text-align: right;
-    font-size: 4vh;
-  }
+.right {
+  width: 25%;
+  text-align: right;
+  font-size: 4vh;
+}
 
-  .left{
-    width: 25%;
-    text-align: left;
-    font-size: 4vh;
-  }
+.left {
+  width: 25%;
+  text-align: left;
+  font-size: 4vh;
+}
 
-  .projects{
-    color: inherit;
-    font-size: 7vh;
-    text-align: center;
-    width: 50%;
-  }
-
-
+.projects {
+  color: inherit;
+  font-size: 7vh;
+  text-align: center;
+  width: 50%;
+}
 
 /** Settings for links in top
 *
 *
 */
-  .link{
-    padding: 1vh;
-    color: inherit;
-    text-decoration: none;
-    transition: transform .2s;
-  }
+.link {
+  padding: 1vh;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
 
-  .link:hover {
-    text-transform: uppercase;
-  }
-  
-  a{
-    color: inherit;
-  }
+.link:hover {
+  text-transform: uppercase;
+}
 
-  /** Settings for expand buttons
+a {
+  color: inherit;
+}
+
+/** Settings for expand buttons
   *
   *
   */
-  .center{
-    text-align: center;
-    width: 100%;
-  }
-
-
+.center {
+  text-align: center;
+  width: 100%;
+}
 
 /** Settings for scroll.totop component
 *
 *
 */
-.totop{
+.totop {
   height: 40px;
   width: 40px;
-  transition: transform .1s;
+  transition: transform 0.1s;
 }
 
-.totop:hover{
+.totop:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
-
-
 
 /** Settings for project-components
 * 
 *
 */
-.projectheader{
+.projectheader {
   font-size: 10vh;
   margin-top: 4vh;
 }
 
-.projectcontent{
+.projectcontent {
   font-size: 4vh;
   margin-top: 2vh;
 }
 
-.projectleft{
+.projectleft {
   height: 100vh;
   text-align: left;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
   padding-left: 50px;
   padding-right: 50px;
-  
 }
 
-.projectright{
+.projectright {
   height: 100vh;
   text-align: right;
   border-top: solid 1px black;
@@ -109,30 +102,27 @@
   padding-right: 50px;
 }
 
-.projectpicture{
-
+.projectpicture {
 }
-
-
 
 /** Settings for project ideas -component
 *
 *
 */
-.projectideas{
+.projectideas {
   height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
 }
 
-.projectideasheader{
+.projectideasheader {
   font-size: 10vh;
   flex: 1;
   text-align: center;
 }
 
-.projectideascontent{
+.projectideascontent {
   font-size: 5vh;
   flex: 8;
   text-align: center;
@@ -140,108 +130,98 @@
   padding-right: 50px;
 }
 
-.projectideasfooter{
+.projectideasfooter {
   text-align: center;
   flex: 1;
 }
-
-
 
 /** Settings when screen width is less than 900px
 *
 *
 */
 @media screen and (max-width: 900px) {
-  
   /** Settings for links in top
   *
   *
   */
-  .link{
+  .link {
     padding: 1vh;
     color: inherit;
     text-decoration: none;
-    transition: transform .2s;
+    transition: transform 0.2s;
     font-size: 25px;
   }
 
   .link:hover {
     text-transform: uppercase;
   }
-  
-  
+
   /** Settings for divs in top
   *
   *
   */
-  .top{
+  .top {
     height: 100vh;
     width: 100%;
     font-size: inherit;
   }
 
-  .projects{
+  .projects {
     color: inherit;
     font-size: 20px;
     text-align: center;
     width: 50%;
   }
 
-  .right{
+  .right {
     width: 25%;
     text-align: right;
   }
 
-  .left{
+  .left {
     width: 25%;
     text-align: left;
   }
 
-
-  
   /** CSS for expand icons
   *
   *
   */
-  .center{
+  .center {
     text-align: center;
     width: 100%;
   }
-
-
 
   /** Settings for scroll.totop -icon
   *
   *
   */
-  .totop{
+  .totop {
     height: 40px;
     width: 40px;
-    transition: transform .1s;
+    transition: transform 0.1s;
   }
 
-  .totop:hover{
+  .totop:hover {
     transform: scale(1.3);
     cursor: pointer;
   }
-
-
 
   /** Settings for project-components
   *
   *
   */
-  .projectheader{
+  .projectheader {
     font-size: 30px;
     margin-top: 10px;
   }
 
-  .projectcontent{
+  .projectcontent {
     font-size: 20px;
     margin-top: 5px;
   }
 
-  .projectleft{
+  .projectleft {
     height: 100vh;
     text-align: left;
     border-top: solid 1px black;
@@ -250,7 +230,7 @@
     padding-right: 0px;
   }
 
-  .projectright{
+  .projectright {
     height: 100vh;
     text-align: right;
     border-top: solid 1px black;
@@ -259,38 +239,35 @@
     padding-right: 0px;
   }
 
-  .projectpicture{
-    
+  .projectpicture {
   }
-
-
 
   /** Settings for bottom component that renders project ideas
   *
   *
   */
-  .projectideas{
+  .projectideas {
     height: 95vh;
     display: flex;
     flex-direction: column;
   }
 
-  .projectideasheader{
+  .projectideasheader {
     font-size: 40px;
     flex: 1;
     text-align: center;
   }
 
-  .projectideascontent{
+  .projectideascontent {
     font-size: 20px;
     flex: 8;
     text-align: center;
     padding-left: 0px;
-  padding-right: 0px;
+    padding-right: 0px;
   }
 
-  .projectideasfooter{
+  .projectideasfooter {
     text-align: center;
     flex: 1;
-  }  
+  }
 }

@@ -1,304 +1,279 @@
-.a1{
-    color: #719FAE;
-  }
-  
-  .a2{
-    color: #C08B78;
-  }
-  
-  .a3{
-    color: #A73529;
-  }
-  
-  .a4{
-    color: #6D4C43;
-  }
-  
-  .a5{
-    color: #391E1A;
-  }  
-
-
-  .d1{
-    color: #F1D41C;
-  }
-  
-  .d2{
-    color: #09B2DC;
-  }
-  
-  .d3{
-    color: #9F5006;
-  }
-  
-  .d4{
-    color: #0467BE;
-  }
-  
-  .d5{
-    color: #040505;
-  }
-
-
-
-  .e1{
-    color: #F8F2E1;
-  }
-
-  .e2{
-    color: #65B4BF;
-  }
-
-  .e3{
-    color: #D49161;
-  }
-
-  .e4{
-    color: #B6608E;
-  }
-
-  .e5{
-    color: #324345;
-  }
-  
-
-
-  .f1{
-    color: #B8B9AD;
-  }
-
-  .f2{
-    color: #7B999D;
-  }
-
-  .f3{
-    color: #8C542C;
-  }
-
-  .f4{
-    color: #1C3344;
-  }
-
-  .f5{
-    color: #141B21;
-  }
-
-
-
-  .g1{
-    color: #F65164;
-  }
-
-  .g2{
-    color: #F44050;
-  }
-
-  .g3{
-    color: #C1202B;
-  }
-
-  .g4{
-    color: #620A0D;
-  }
-
-  .g5{
-    color: #140505;
-  }
-
-
-
-  .m1{
-    color: #0595FB;
-  }
-
-  .m2{
-    color: #EF0994;
-  }
-
-  .m3{
-    color: #6970D8;
-  }
-
-  .m4{
-    color: #9F69D2;
-  }
-
-  .m5{
-    color: #7D3FB0;
-  }
-
-
-
-  .n1{
-    color: #D7B47C;
-  }
-
-  .n2{
-    color: #84A7B9;
-  }
-
-  .n3{
-    color: #CD8037;
-  }
-
-  .n4{
-    color: #8C7F8A;
-  }
-
-  .n5{
-    color: #53342C;
-  }
-
-
-
-  .o1{
-    color: #DABC69;
-  }
-
-  .o2{
-    color: #649381;
-  }
-
-  .o3{
-    color: #E32D2D;
-  }
-
-  .o4{
-    color: #057989;
-  }
-
-  .o5{
-    color: #190E09;
-  }
-
-
-
-  .q1{
-    color: #23CABE;
-  }
-
-  .q2{
-    color: #1F88A7;
-  }
-
-  .q3{
-    color: #CF4487;
-  }
-
-  .q4{
-    color: #8C1071;
-  }
-
-  .q5{
-    color: #3B127B;
-  }
-
-
-
-  .s1{
-    color: #F3EADA;
-  }
-
-  .s2{
-    color: #D6A045;
-  }
-
-  .s3{
-    color: #9B9188;
-  }
-
-  .s4{
-    color: #6882AD;
-  }
-
-  .s5{
-    color: #514741;
-  }
-
-
-
-  .x1{
-    color: #9BC7CE;
-  }
-
-  .x2{
-    color: #E3CAB2;
-  }
-
-  .x3{
-    color: #E9D35C;
-  }
-
-  .x4{
-    color: #76ABB1;
-  }
-
-  .x5{
-    color: #424B4D;
-  }
-
-
-
-  .aa1{
-    color: #9EE4D9;
-  }
-
-  .aa2{
-    color: #6ABBBF;
-  }
-
-  .aa3{
-    color: #D29B31;
-  }
-
-  .aa4{
-    color: #923930;
-  }
-
-  .aa5{
-    color: #3A3734;
-  }
-
-
-
-  .bb1{
-    color: #F5D58B;
-  }
-
-  .bb2{
-    color: #F49A25;
-  }
-
-  .bb3{
-    color: #8A6D4C;
-  }
-
-  .bb4{
-    color: #B9341E;
-  }
-
-  .bb5{
-    color: #3F341E;
-  }
-
-
-
-  .dd1{
-    color: #DEB51E;
-  }
-
-  .dd2{
-    color: #C95848;
-  }
-
-  .dd3{
-    color: #4B9B45;
-  }
-
-  .dd4{
-    color: #185229;
-  }
-
-  .dd5{
-    color: #17100B;
-  }
+.a1 {
+  color: #719fae;
+}
+
+.a2 {
+  color: #c08b78;
+}
+
+.a3 {
+  color: #a73529;
+}
+
+.a4 {
+  color: #6d4c43;
+}
+
+.a5 {
+  color: #391e1a;
+}
+
+.d1 {
+  color: #f1d41c;
+}
+
+.d2 {
+  color: #09b2dc;
+}
+
+.d3 {
+  color: #9f5006;
+}
+
+.d4 {
+  color: #0467be;
+}
+
+.d5 {
+  color: #040505;
+}
+
+.e1 {
+  color: #f8f2e1;
+}
+
+.e2 {
+  color: #65b4bf;
+}
+
+.e3 {
+  color: #d49161;
+}
+
+.e4 {
+  color: #b6608e;
+}
+
+.e5 {
+  color: #324345;
+}
+
+.f1 {
+  color: #b8b9ad;
+}
+
+.f2 {
+  color: #7b999d;
+}
+
+.f3 {
+  color: #8c542c;
+}
+
+.f4 {
+  color: #1c3344;
+}
+
+.f5 {
+  color: #141b21;
+}
+
+.g1 {
+  color: #f65164;
+}
+
+.g2 {
+  color: #f44050;
+}
+
+.g3 {
+  color: #c1202b;
+}
+
+.g4 {
+  color: #620a0d;
+}
+
+.g5 {
+  color: #140505;
+}
+
+.m1 {
+  color: #0595fb;
+}
+
+.m2 {
+  color: #ef0994;
+}
+
+.m3 {
+  color: #6970d8;
+}
+
+.m4 {
+  color: #9f69d2;
+}
+
+.m5 {
+  color: #7d3fb0;
+}
+
+.n1 {
+  color: #d7b47c;
+}
+
+.n2 {
+  color: #84a7b9;
+}
+
+.n3 {
+  color: #cd8037;
+}
+
+.n4 {
+  color: #8c7f8a;
+}
+
+.n5 {
+  color: #53342c;
+}
+
+.o1 {
+  color: #dabc69;
+}
+
+.o2 {
+  color: #649381;
+}
+
+.o3 {
+  color: #e32d2d;
+}
+
+.o4 {
+  color: #057989;
+}
+
+.o5 {
+  color: #190e09;
+}
+
+.q1 {
+  color: #23cabe;
+}
+
+.q2 {
+  color: #1f88a7;
+}
+
+.q3 {
+  color: #cf4487;
+}
+
+.q4 {
+  color: #8c1071;
+}
+
+.q5 {
+  color: #3b127b;
+}
+
+.s1 {
+  color: #f3eada;
+}
+
+.s2 {
+  color: #d6a045;
+}
+
+.s3 {
+  color: #9b9188;
+}
+
+.s4 {
+  color: #6882ad;
+}
+
+.s5 {
+  color: #514741;
+}
+
+.x1 {
+  color: #9bc7ce;
+}
+
+.x2 {
+  color: #e3cab2;
+}
+
+.x3 {
+  color: #e9d35c;
+}
+
+.x4 {
+  color: #76abb1;
+}
+
+.x5 {
+  color: #424b4d;
+}
+
+.aa1 {
+  color: #9ee4d9;
+}
+
+.aa2 {
+  color: #6abbbf;
+}
+
+.aa3 {
+  color: #d29b31;
+}
+
+.aa4 {
+  color: #923930;
+}
+
+.aa5 {
+  color: #3a3734;
+}
+
+.bb1 {
+  color: #f5d58b;
+}
+
+.bb2 {
+  color: #f49a25;
+}
+
+.bb3 {
+  color: #8a6d4c;
+}
+
+.bb4 {
+  color: #b9341e;
+}
+
+.bb5 {
+  color: #3f341e;
+}
+
+.dd1 {
+  color: #deb51e;
+}
+
+.dd2 {
+  color: #c95848;
+}
+
+.dd3 {
+  color: #4b9b45;
+}
+
+.dd4 {
+  color: #185229;
+}
+
+.dd5 {
+  color: #17100b;
+}
